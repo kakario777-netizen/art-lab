@@ -1,5 +1,5 @@
 {
- "_note": "트라이브 빌리지 게임 그림. 원작 그림을 따라 하지 않고 설명 문장만으로 새로 그림. 흰 배경 → 배경 지움 → 게임 크기로 줄임",
+ "_note": "트라이브 빌리지 게임 그림. 원작 그림을 따라 하지 않고 설명 문장만으로 새로 그림. 흰 배경 → 배경 지움 → 게임 크기로 줄임. 원작 인물·건물의 고유한 특징(머리색·장식·옷 조합 등)은 따라 하지 않음 — 역할만 같고 생김새는 새로 정함",
  "_style": {
   "b": "isometric view, 3/4 top-down angle, single game asset, centered, casual mobile village-builder game art, stylized 3d render, soft hand-painted textures, warm sunny lighting, clean silhouette, vibrant colors, high detail, plain white background",
   "c": "full body, standing, front three-quarter view, single character, centered, casual mobile game character art, stylized 3d render, chibi-like proportions with big head, friendly cartoon face, soft hand-painted textures, warm lighting, vibrant colors, plain white background",
@@ -369,7 +369,7 @@
    "kind": "c",
    "w": 832,
    "h": 1216,
-   "prompt": "young tribal girl leader, long auburn hair with flower, green leaf headband, fur top and skirt, bead necklace, confident smile"
+   "prompt": "cheerful young tribal girl, short black bob hair, orange woven headband with beads, blue feather earring, patterned woven top and skirt, carrying a small basket"
   },
   {
    "id": "explorer",
@@ -377,7 +377,7 @@
    "kind": "c",
    "w": 832,
    "h": 1216,
-   "prompt": "friendly old explorer scientist, round glasses, white mustache, khaki safari outfit and pith helmet, notebook"
+   "prompt": "young cheerful inventor, messy blond hair, brass goggles on forehead, brown leather jacket with many pockets, holding a wrench"
   },
   {
    "id": "shaman",
@@ -385,7 +385,7 @@
    "kind": "c",
    "w": 832,
    "h": 1216,
-   "prompt": "old tribal shaman, wooden mask pushed up on head, feather cloak, carved staff with bones"
+   "prompt": "elderly tribal wise woman, white hair in a bun, shell necklace, woven shawl, wooden staff topped with a glowing blue stone"
   },
   {
    "id": "strongman",
@@ -393,7 +393,7 @@
    "kind": "c",
    "w": 832,
    "h": 1216,
-   "prompt": "big friendly tribal man with dreadlocks, beard, muscular, bone necklace, fur loincloth"
+   "prompt": "plump friendly fisherman, short grey beard, wide straw hat, striped shirt, fishing net over shoulder"
   },
   {
    "id": "goblin",
@@ -417,7 +417,7 @@
    "kind": "p",
    "w": 1024,
    "h": 1024,
-   "prompt": "young tribal girl leader, long auburn hair with flower, green leaf headband, bead necklace, confident smile"
+   "prompt": "cheerful young tribal girl, short black bob hair, orange woven headband with beads, blue feather earring"
   },
   {
    "id": "p_explorer",
@@ -425,7 +425,7 @@
    "kind": "p",
    "w": 1024,
    "h": 1024,
-   "prompt": "friendly old explorer scientist, round glasses, white mustache, pith helmet"
+   "prompt": "young cheerful inventor, messy blond hair, brass goggles on forehead, brown leather jacket collar"
   },
   {
    "id": "p_shaman",
@@ -433,7 +433,7 @@
    "kind": "p",
    "w": 1024,
    "h": 1024,
-   "prompt": "old tribal shaman, wooden mask pushed up on head, feather cloak"
+   "prompt": "elderly tribal wise woman, white hair in a bun, shell necklace, kind wrinkled smile"
   },
   {
    "id": "p_strongman",
@@ -441,7 +441,7 @@
    "kind": "p",
    "w": 1024,
    "h": 1024,
-   "prompt": "big friendly tribal man with dreadlocks and beard, bone necklace"
+   "prompt": "plump friendly fisherman, short grey beard, wide straw hat, warm grin"
   }
  ]
 }
