@@ -4,8 +4,10 @@ from PIL import Image, ImageDraw
 ids = [x.strip() for x in sys.argv[1].split(",")] if len(sys.argv) > 1 else None
 fs = sorted(f for f in glob.glob("out/*") if f.endswith((".png", ".jpg"))
             and (ids is None or any(os.path.basename(f).startswith(i + "_s") for i in ids)))
-if ids and "hero_ip" in ids and os.path.exists("ref/hero.png"):
-    fs = ["ref/hero.png"] + fs
+refs = {"hero_ip": "ref/hero.png", "hero_adult": "ref/hero.png", "seohwi_dutch": "ref/seohwi.png"}
+for k, r in refs.items():
+    if ids and k in ids and os.path.exists(r) and r not in fs:
+        fs = [r] + fs
 if not fs: sys.exit()
 W = 300
 ims = []

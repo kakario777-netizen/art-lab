@@ -75,7 +75,15 @@ if it.get("ref"):
     kw["ip_adapter_image_embeds"] = embeds
     print(f"참고 인물 준비 {time.time()-t0:.0f}초", flush=True)
 
-init = commons_photo(it["init_search"]) if it.get("init_search") else None
+init = None
+qs = it.get("init_search", [])
+for q in ([qs] if isinstance(qs, str) else qs):
+    init = commons_photo(q)
+    if init is not None:
+        break
+if init is None and it.get("init_file"):
+    init = Image.open(it["init_file"]).convert("RGB")
+    print("밑그림: 게임 배경", it["init_file"], flush=True)
 if init is not None:
     init = ImageOps.fit(init, (W, H))
     init.save(f"out/{item_id}_s{seed}_base_photo.jpg", quality=85)

@@ -1,33 +1,12 @@
 {
  "_style": "masterpiece, high score, great score, absurdres, detailed illustration, soft painterly shading, korean webtoon style, delicate lineart",
- "_negative": "lowres, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, text, error, cropped, worst quality, low quality, low score, bad score, average score, signature, watermark, username, blurry, jpeg artifacts, nsfw, kimono, chinese clothes, japanese architecture, torii, shrine, pagoda, chinese architecture, japanese clothes",
+ "_negative": "lowres, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, text, error, cropped, worst quality, low quality, low score, bad score, average score, signature, watermark, username, blurry, jpeg artifacts, nsfw, kimono, chinese clothes, japanese architecture, torii, shrine, pagoda, chinese architecture, japanese clothes, red hair, photo, realistic, 3d",
  "items": [
-  {
-   "id": "holland",
-   "w": 768,
-   "h": 1344,
-   "prompt": "no humans, scenery, 17th century dutch harbor town, amsterdam canal, tall narrow brick gabled houses, wooden sailing ships with masts, windmill in distance, cobblestone quay, overcast sky, soft warm light, detailed background"
-  },
   {
    "id": "haejeok",
    "w": 768,
    "h": 1344,
    "prompt": "1boy, solo, full body, standing, 17th century european sailor thug, rough pirate, stubble, scar on face, red bandana, tattered brown coat, white shirt, leather belt, holding cutlass, menacing grin, dark gradient background, simple background"
-  },
-  {
-   "id": "hero_adult",
-   "w": 768,
-   "h": 1344,
-   "prompt": "1girl, solo, mature female, adult woman, full body, standing, long brown hair, single low braid, red hair ribbon, grey eyes, gentle smile, korean traditional clothes, hanbok, burgundy jeogori, white collar, long dark red skirt, holding medicine pouch, elegant, dark gradient background, simple background"
-  },
-  {
-   "id": "wedding",
-   "w": 768,
-   "h": 1344,
-   "seeds": [
-    1
-   ],
-   "prompt": "no humans, scenery, korean traditional wedding ceremony table in hanok courtyard, wedding table with red and blue cloth, candles, wooden ducks, folding screen, colorful silk banners, flower petals, spring, warm sunlight, joseon dynasty korea, korean traditional hanok, curved giwa tiled roof, wooden beams, hanji paper doors, earthen walls"
   },
   {
    "id": "wedding_base",
@@ -39,15 +18,6 @@
    "init_search": "Korea 1900s house courtyard photograph",
    "strength": 0.72,
    "prompt": "no humans, scenery, korean traditional wedding ceremony table in hanok courtyard, wedding table with red and blue cloth, candles, folding screen, flower petals, spring, warm sunlight, joseon dynasty korea, korean traditional hanok, curved giwa tiled roof, wooden beams, hanji paper doors, earthen walls"
-  },
-  {
-   "id": "family",
-   "w": 768,
-   "h": 1344,
-   "seeds": [
-    1
-   ],
-   "prompt": "no humans, scenery, cozy korean hanok house courtyard, wooden maru porch, jangdokdae earthen jars, persimmon tree, laundry line, small wooden toys, warm afternoon light, peaceful, joseon dynasty korea, korean traditional hanok, curved giwa tiled roof, wooden beams, hanji paper doors, earthen walls"
   },
   {
    "id": "family_base",
@@ -72,6 +42,123 @@
    "ref": "ref/hero.png",
    "ip_scale": 0.6,
    "prompt": "1girl, solo, mature female, adult woman, full body, standing, long brown hair, single low braid, red hair ribbon, grey eyes, gentle smile, korean traditional clothes, hanbok, burgundy jeogori, long dark red skirt, holding medicine pouch, elegant, dark gradient background, simple background, detailed lineart"
+  },
+  {
+   "id": "seohwi_dutch",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "ref": "ref/seohwi.png",
+   "ip_scale": 0.55,
+   "prompt": "1boy, solo, adult male, handsome, long wavy blonde hair, low ponytail, round glasses, blue eyes, gentle smile, scandinavian folk costume, black wool vest with red front panel and many silver buttons, red trimmed high collar, white long sleeve shirt, black knee breeches, black top hat, silver chain, teacher, holding a book, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing"
+  },
+  {
+   "id": "hero_adult",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "ref": "ref/hero.png",
+   "ip_scale": 0.5,
+   "prompt": "1girl, solo, mature female, adult woman, 20 years old, tall, womanly, calm mature face, dark brown hair, long single low braid, red hair ribbon daenggi, grey eyes, gentle smile, korean traditional clothes, hanbok, cream jeogori, red otgoreum, long dark burgundy skirt, small medicine pouch, elegant, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing"
+  },
+  {
+   "id": "dutch_child",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "prompt": "1girl, solo, little girl, child, 6 years old, cute, light brown hair, bangs, blue eyes, dutch volendam folk costume, white lace pointed bonnet cap, red bodice with white apron straps, red short sleeves with small print, long striped skirt with floral blue and red pattern, curious expression, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing"
+  },
+  {
+   "id": "rat",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "prompt": "no humans, giant plague rat monster, creature, dark grey fur, glowing red eyes, sharp teeth, long tail, sewer, menacing, dark fantasy, dark gradient background, simple background, full body"
+  },
+  {
+   "id": "sea",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "prompt": "no humans, scenery, deck of a 17th century wooden sailing ship on the open sea, masts and ropes, sails, waves, dramatic cloudy sky, sunset, detailed background"
+  },
+  {
+   "id": "holland",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    2,
+    3
+   ],
+   "prompt": "no humans, scenery, 17th century dutch harbor town, amsterdam canal, tall narrow brick gabled houses, wooden sailing ships with masts, windmill in distance, cobblestone quay, overcast sky, soft warm light, detailed background"
+  },
+  {
+   "id": "wedding",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "strength": 0.72,
+   "init_search": [
+    "Korean house courtyard 1900s",
+    "Korea 1904 house",
+    "Old Korean house photograph",
+    "Hanok 1890s"
+   ],
+   "init_file": "ref/bg_byeolchae.jpg",
+   "prompt": "no humans, scenery, korean traditional wedding ceremony table in hanok courtyard, wedding table with red and blue cloth, candles, folding screen, colorful silk, flower petals, spring, warm sunlight, joseon dynasty korea, korean traditional hanok, curved giwa tiled roof, wooden beams, hanji paper doors, earthen walls"
+  },
+  {
+   "id": "family",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "strength": 0.72,
+   "init_search": [
+    "Korean house 1900s",
+    "Old Korean village photograph",
+    "Korea thatched house 1900s",
+    "Korean traditional house photograph"
+   ],
+   "init_file": "ref/bg_byeolchae.jpg",
+   "prompt": "no humans, scenery, cozy korean hanok house courtyard, wooden maru porch, jangdokdae earthen jars, persimmon tree, laundry line, warm afternoon light, peaceful, joseon dynasty korea, korean traditional hanok, curved giwa tiled roof, wooden beams, hanji paper doors, earthen walls"
+  },
+  {
+   "id": "gate",
+   "w": 1024,
+   "h": 1024,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "prompt": "no humans, game asset, isometric view, single korean traditional gate, iljumun, red wooden pillars, curved giwa tiled roof with dancheong colorful patterns, stone steps, glowing golden light, fantasy anime style, white background, simple background, centered"
   }
  ]
 }
