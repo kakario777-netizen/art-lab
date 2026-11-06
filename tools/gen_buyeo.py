@@ -28,7 +28,7 @@ if bb: cut = cut.crop(bb)
 cut.save(f"buyeo/out/{item_id}_s{seed}.png")
 
 # ── 도트풍 가공: 112px 안에 맞춤 → 색 24개 → 알파 딱 자르기 → 1px 짙은 외곽선 → 128px 칸 가운데
-S, INNER, NCOL = 128, 112, 24
+S, INNER, NCOL = (192, 184, 32) if kind == "p" else (128, 112, 24)   # 초상은 크게·색 많이
 c = cut.copy(); c.thumbnail((INNER, INNER), Image.LANCZOS)
 a = np.asarray(c).copy()
 mask = a[..., 3] >= 128
