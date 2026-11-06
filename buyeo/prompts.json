@@ -1,7 +1,8 @@
 {
  "_note": "부여전기(buyeo-rpg) 그림. 고구려·부여 고대풍, 옛 바람의나라 도트 게임에 어울리게. 원작 바람의나라 그림은 따라 하지 않음. 흰 배경 → 배경 지움 → 128px 도트풍 가공(색 수 줄이기·외곽선)",
  "_style": {
-  "i": "single game item icon, centered, slightly top-down three-quarter view, old korean pixel-art rpg inventory icon style, clean bold silhouette, thick dark outline, flat cel shading with few colors, ancient Goguryeo Korea, earthy muted palette of ochre, vermilion, ink black, jade green, plain white background"
+  "i": "single game item icon, centered, slightly top-down three-quarter view, old korean pixel-art rpg inventory icon style, clean bold silhouette, thick dark outline, flat cel shading with few colors, ancient Goguryeo Korea, earthy muted palette of ochre, vermilion, ink black, jade green, plain white background",
+  "s": "round skill icon emblem, single symbol centered inside a circular bronze medallion frame, old korean rpg skill button icon, bold simple shapes, thick dark outline, flat cel shading, ancient Goguryeo mural colors, plain white background"
  },
  "_negative": "text, letters, watermark, signature, logo, frame, border, multiple objects, collage, grid, scenery, background, hands, person, photo, photorealistic, blurry, lowres, japanese, chinese dragon, katana, kimono, shadow on floor, pedestal",
  "items": [
@@ -60,6 +61,166 @@
    "w": 768,
    "h": 768,
    "prompt": "ancient Goguryeo conical cap made of birch bark with two tall bird feathers sticking up, chin strap"
+  },
+  {
+   "id": "iron_sword",
+   "name": "철검",
+   "kind": "i",
+   "w": 768,
+   "h": 768,
+   "prompt": "straight single-edged ancient iron sword with simple ring-less round pommel, plain straight guardless hilt wrapped in dark leather, dark grey iron blade, diagonal"
+  },
+  {
+   "id": "ring_sword",
+   "name": "환두대도",
+   "kind": "i",
+   "w": 768,
+   "h": 768,
+   "prompt": "ancient korean ring-pommel long sword, large round gold ring at the end of the hilt, straight single-edged steel blade, red lacquered scabbard detail, diagonal"
+  },
+  {
+   "id": "hemp_cloth",
+   "name": "삼베옷",
+   "kind": "i",
+   "w": 768,
+   "h": 768,
+   "prompt": "folded plain beige hemp cloth jacket and trousers, coarse woven texture, simple ancient korean commoner clothes, neatly folded"
+  },
+  {
+   "id": "leather",
+   "name": "가죽갑옷",
+   "kind": "i",
+   "w": 768,
+   "h": 768,
+   "prompt": "ancient leather armor vest made of brown hardened leather plates laced with cords, sleeveless, front view, no person"
+  },
+  {
+   "id": "lamellar",
+   "name": "찰갑",
+   "kind": "i",
+   "w": 768,
+   "h": 768,
+   "prompt": "ancient Goguryeo lamellar armor made of many small rectangular iron plates laced together with red cords, front view, no person"
+  },
+  {
+   "id": "wood_shield",
+   "name": "나무방패",
+   "kind": "i",
+   "w": 768,
+   "h": 768,
+   "prompt": "long rectangular wooden shield with rounded corners, painted red and black geometric pattern, leather straps, front view"
+  },
+  {
+   "id": "straw_shoes",
+   "name": "짚신",
+   "kind": "i",
+   "w": 768,
+   "h": 768,
+   "prompt": "pair of traditional korean straw sandals woven from rice straw, top view"
+  },
+  {
+   "id": "jade_ring",
+   "name": "곡옥 목걸이",
+   "kind": "i",
+   "w": 768,
+   "h": 768,
+   "prompt": "ancient korean necklace with a comma shaped green jade gogok bead and small round beads on a cord"
+  },
+  {
+   "id": "rabbit_meat",
+   "name": "토끼고기",
+   "kind": "i",
+   "w": 768,
+   "h": 768,
+   "prompt": "raw rabbit meat leg on a large green leaf, simple game food item"
+  },
+  {
+   "id": "fox_fur",
+   "name": "여우가죽",
+   "kind": "i",
+   "w": 768,
+   "h": 768,
+   "prompt": "folded red fox pelt with bushy tail with white tip, hunting trophy item"
+  },
+  {
+   "id": "antler",
+   "name": "사슴뿔",
+   "kind": "i",
+   "w": 768,
+   "h": 768,
+   "prompt": "single branched deer antler, light brown"
+  },
+  {
+   "id": "boar_tusk",
+   "name": "멧돼지 어금니",
+   "kind": "i",
+   "w": 768,
+   "h": 768,
+   "prompt": "two curved ivory wild boar tusks tied with a brown cord"
+  },
+  {
+   "id": "sk_slash",
+   "name": "베어가르기",
+   "kind": "s",
+   "w": 768,
+   "h": 768,
+   "prompt": "a sword slash arc with bright white motion streaks"
+  },
+  {
+   "id": "sk_roar",
+   "name": "기합",
+   "kind": "s",
+   "w": 768,
+   "h": 768,
+   "prompt": "a roaring tiger head with red aura flames, war cry"
+  },
+  {
+   "id": "sk_vital",
+   "name": "급소찌르기",
+   "kind": "s",
+   "w": 768,
+   "h": 768,
+   "prompt": "a dagger stabbing a glowing red target point"
+  },
+  {
+   "id": "sk_dagger",
+   "name": "비수던지기",
+   "kind": "s",
+   "w": 768,
+   "h": 768,
+   "prompt": "three small throwing daggers flying in a line with motion lines"
+  },
+  {
+   "id": "sk_ember",
+   "name": "불씨",
+   "kind": "s",
+   "w": 768,
+   "h": 768,
+   "prompt": "a small fireball ember with orange flames"
+  },
+  {
+   "id": "sk_icicle",
+   "name": "얼음송곳",
+   "kind": "s",
+   "w": 768,
+   "h": 768,
+   "prompt": "a sharp blue icicle spike with frost sparkles"
+  },
+  {
+   "id": "sk_heal",
+   "name": "치유",
+   "kind": "s",
+   "w": 768,
+   "h": 768,
+   "prompt": "glowing green healing leaf with soft light sparkles"
+  },
+  {
+   "id": "sk_spirit",
+   "name": "기운 북돋기",
+   "kind": "s",
+   "w": 768,
+   "h": 768,
+   "prompt": "swirling bright green and white spirit energy orb"
   }
  ]
 }
