@@ -1,0 +1,12 @@
+{
+  "_style": "masterpiece, high score, great score, absurdres, detailed illustration, soft painterly shading, korean webtoon style, delicate lineart",
+  "_negative": "lowres, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, text, error, cropped, worst quality, low quality, low score, bad score, average score, signature, watermark, username, blurry, jpeg artifacts, nsfw, kimono, chinese clothes",
+  "items": [
+    {"id": "holland", "w": 768, "h": 1344,
+     "prompt": "no humans, scenery, 17th century dutch harbor town, amsterdam canal, tall narrow brick gabled houses, wooden sailing ships with masts, windmill in distance, cobblestone quay, overcast sky, soft warm light, detailed background"},
+    {"id": "haejeok", "w": 768, "h": 1344,
+     "prompt": "1boy, solo, full body, standing, 17th century european sailor thug, rough pirate, stubble, scar on face, red bandana, tattered brown coat, white shirt, leather belt, holding cutlass, menacing grin, dark gradient background, simple background"},
+    {"id": "hero_adult", "w": 768, "h": 1344,
+     "prompt": "1girl, solo, mature female, adult woman, full body, standing, long brown hair, single low braid, red hair ribbon, grey eyes, gentle smile, korean traditional clothes, hanbok, burgundy jeogori, white collar, long dark red skirt, holding medicine pouch, elegant, dark gradient background, simple background"}
+  ]
+}
