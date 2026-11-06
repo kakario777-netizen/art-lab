@@ -1,0 +1,15 @@
+{
+ "_note": "트라이브 빌리지(tribez-village) 게임 그림. 원작 그림을 따라 하지 않고 설명만으로 새로 그림. 흰 배경 → 배경 지움",
+ "_style": "isometric view, 3/4 top-down angle, single game asset, centered, casual mobile city-builder game art, stylized 3d render, soft hand-painted textures, warm sunny lighting, clean edges, vibrant colors, high detail, plain white background, no ground plane",
+ "_negative": "text, watermark, signature, logo, people, characters, multiple buildings, cropped, cut off, blurry, lowres, photo, realistic photo, dark, night, frame, border, grass field background, scenery, landscape",
+ "items": [
+  {"id": "hut_1", "w": 1024, "h": 1024, "prompt": "small primitive tribal hut, round wall of wooden stakes, conical thatched straw roof, small doorway, a clay pot beside it"},
+  {"id": "hut_2", "w": 1024, "h": 1024, "prompt": "primitive tribal hut, round woven reed wall, thick golden thatched straw roof with bound top, wooden door, firewood stack beside"},
+  {"id": "hut_4", "w": 1024, "h": 1024, "prompt": "large tribal round hut on a stone base, thick layered golden thatched roof, carved wooden door frame with painted red patterns, drying rack and pots beside"},
+  {"id": "main_1", "w": 1024, "h": 1024, "prompt": "tribal chief's longhouse, big thatched straw roof, wooden log walls, carved colorful totem pole beside the entrance, campfire with stones in front"},
+  {"id": "warehouse_1", "w": 1024, "h": 1024, "prompt": "primitive tribal storehouse on wooden stilts, thatched roof, ladder, baskets of fruit and sacks of grain, stacked logs"},
+  {"id": "ancient_bar_1", "w": 1024, "h": 1024, "prompt": "primitive tribal drinks stall, open hut with thatched roof on wooden posts, wooden counter with coconut cups and fruit, bamboo stools"},
+  {"id": "forester_1", "w": 1024, "h": 1024, "prompt": "primitive woodcutter's hut with thatched roof, stack of chopped logs, tree stump with stone axe stuck in it"},
+  {"id": "nice_hut_1", "w": 1024, "h": 1024, "prompt": "pretty tribal clay hut, round adobe wall painted with red and white tribal patterns, conical thatched roof, flower pots by the door"}
+ ]
+}
