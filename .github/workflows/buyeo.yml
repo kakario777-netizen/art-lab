@@ -25,11 +25,18 @@ jobs:
         run: |
           python3 - <<'PY' >> $GITHUB_OUTPUT
           import json
-          ids = "${{ inputs.ids }}".split(",")
+          ids = "${{ inputs.ids }}".split(","); seeds = "${{ inputs.seeds }}".split(",")
           if ids == ["all"]:
-              ids = [i["id"] for i in json.load(open("buyeo/prompts.json", encoding="utf-8"))["items"]]; seeds = "${{ inputs.seeds }}".split(",")
-          print("matrix=" + json.dumps({"include": [{"id": i.strip(), "seed": s.strip()} for i in ids for s in seeds]}))
-          print("key=model-" + "${{ inputs.model }}".replace("/", "-"))
+              ids = [i["id"] for i in json.load(open("buyeo/prompts.json", encoding="utf-8"))["items"]]
+          inc = []
+          for i in ids:
+              i = i.strip()
+              if ":" in i:          # "id:seed" 이면 그 시드 하나만
+                  a, b = i.split(":"); inc.append({"id": a, "seed": b})
+              else:
+                  inc += [{"id": i, "seed": s.strip()} for s in seeds]
+          print("matrix=" + json.dumps({"include": inc}))
+          print("key=buyeo-model-" + "${{ inputs.model }}".replace("/", "-"))
           PY
 
   model:
@@ -56,17 +63,26 @@ jobs:
   gen:
     needs: [plan, model]
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 100
     strategy:
       fail-fast: false
-      max-parallel: 8
+      max-parallel: 6
       matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
       - name: 디스크 비우기
         run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
-      - uses: actions/cache/restore@v4
-        with: {path: ~/hfcache, key: "${{ needs.plan.outputs.key }}", fail-on-cache-miss: true}
+      - id: rc
+        uses: actions/cache/restore@v4
+        with: {path: ~/hfcache, key: "${{ needs.plan.outputs.key }}"}
+      - name: 캐시가 없으면 모델 직접 받기
+        if: steps.rc.outputs.cache-hit != 'true'
+        run: |
+          pip install --quiet huggingface_hub
+          for i in 1 2 3 4 5; do
+            HF_HOME=~/hfcache python -c "from huggingface_hub import snapshot_download as d; d('${{ inputs.model }}', allow_patterns=['*.json','*.txt','unet/*.safetensors','vae/*.safetensors','text_encoder*/*.safetensors','tokenizer*/*'], max_workers=2)" && break
+            sleep $((i*30))
+          done
       - name: 설치
         run: |
           pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
@@ -88,6 +104,7 @@ jobs:
       - name: 저장소에 올리기
         run: |
           mkdir -p buyeo/out buyeo/game && cp -r dl/out/* buyeo/out/ 2>/dev/null; cp -r dl/game/* buyeo/game/ 2>/dev/null; true
+          sudo apt-get install -y -q fonts-noto-cjk >/dev/null 2>&1 || true
           pip install --quiet pillow && python tools/sheet_buyeo.py
           git config user.name "art-bot"; git config user.email "art-bot@users.noreply.github.com"
           git add buyeo && git commit -m "부여전기 그림 생성 결과" || exit 0

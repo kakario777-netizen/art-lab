@@ -5,13 +5,61 @@
  },
  "_negative": "text, letters, watermark, signature, logo, frame, border, multiple objects, collage, grid, scenery, background, hands, person, photo, photorealistic, blurry, lowres, japanese, chinese dragon, katana, kimono, shadow on floor, pedestal",
  "items": [
-  {"id": "herb",        "name": "약초",     "w": 1024, "h": 1024, "prompt": "bundle of fresh green medicinal herb leaves with roots tied with straw string"},
-  {"id": "acorn",       "name": "도토리",   "w": 1024, "h": 1024, "prompt": "two brown acorns with caps and a small oak leaf"},
-  {"id": "ginseng",     "name": "산삼",     "w": 1024, "h": 1024, "prompt": "wild mountain ginseng root with thin hairy roots, small red berries and three green leaves"},
-  {"id": "ricecake",    "name": "떡",       "w": 1024, "h": 1024, "prompt": "stack of three round white korean rice cakes on a small woven straw mat"},
-  {"id": "return_bell", "name": "귀환 방울", "w": 1024, "h": 1024, "prompt": "small ancient bronze ritual bell with a red silk cord and tassel"},
-  {"id": "wood_sword",  "name": "목검",     "w": 1024, "h": 1024, "prompt": "simple wooden practice sword, straight blade, cloth wrapped handle, diagonal"},
-  {"id": "bronze_sword","name": "청동검",   "w": 1024, "h": 1024, "prompt": "ancient korean bronze dagger sword with mandolin shaped blade and short hilt, greenish bronze patina, diagonal"},
-  {"id": "jeolpung",    "name": "절풍",     "w": 1024, "h": 1024, "prompt": "ancient Goguryeo conical cap made of birch bark with two tall bird feathers sticking up, chin strap"}
+  {
+   "id": "herb",
+   "name": "약초",
+   "w": 768,
+   "h": 768,
+   "prompt": "bundle of fresh green medicinal herb leaves with roots tied with straw string"
+  },
+  {
+   "id": "acorn",
+   "name": "도토리",
+   "w": 768,
+   "h": 768,
+   "prompt": "two brown acorns with caps and a small oak leaf"
+  },
+  {
+   "id": "ginseng",
+   "name": "산삼",
+   "w": 768,
+   "h": 768,
+   "prompt": "wild mountain ginseng root with thin hairy roots, small red berries and three green leaves"
+  },
+  {
+   "id": "ricecake",
+   "name": "떡",
+   "w": 768,
+   "h": 768,
+   "prompt": "small white ceramic plate with korean rice cakes: soft chewy injeolmi squares coated in yellow roasted soybean powder and a few white garaetteok rice cake sticks"
+  },
+  {
+   "id": "return_bell",
+   "name": "귀환 방울",
+   "w": 768,
+   "h": 768,
+   "prompt": "small ancient bronze ritual bell with a red silk cord and tassel"
+  },
+  {
+   "id": "wood_sword",
+   "name": "목검",
+   "w": 768,
+   "h": 768,
+   "prompt": "simple wooden practice sword, straight blade, cloth wrapped handle, diagonal"
+  },
+  {
+   "id": "bronze_sword",
+   "name": "청동검",
+   "w": 768,
+   "h": 768,
+   "prompt": "ancient korean bronze dagger sword with mandolin shaped blade and short hilt, greenish bronze patina, diagonal"
+  },
+  {
+   "id": "jeolpung",
+   "name": "절풍",
+   "w": 768,
+   "h": 768,
+   "prompt": "ancient Goguryeo conical cap made of birch bark with two tall bird feathers sticking up, chin strap"
+  }
  ]
 }
