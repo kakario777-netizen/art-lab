@@ -23,15 +23,18 @@ img = pipe(prompt=it["prompt"] + ", " + style, negative_prompt=neg,
            generator=torch.Generator().manual_seed(seed), callback_on_step_end=cb).images[0]
 os.makedirs("emberfall/out", exist_ok=True)
 img.convert("RGB").save(f"emberfall/out/{item_id}_s{seed}_raw.jpg", quality=85)
-from rembg import remove, new_session
-cut = remove(img, session=new_session("isnet-general-use"))
-bb = cut.getchannel("A").getbbox()
-if bb:
-    cut = cut.crop(bb)
+if kind in ("t", "i"):          # 바닥 텍스처·기술 아이콘은 배경을 지우지 않고 정사각 그대로
+    cut = img.convert("RGBA")
+else:
+    from rembg import remove, new_session
+    cut = remove(img, session=new_session("isnet-general-use"))
+    bb = cut.getchannel("A").getbbox()
+    if bb:
+        cut = cut.crop(bb)
 cut.save(f"emberfall/out/{item_id}_s{seed}.png")
 # 게임 크기 (가로 최대 512, 인물은 높이 256)
 g = cut.copy()
-lim = (512, 512) if kind == "b" else (320, 320)
+lim = {"b": (512, 512), "t": (512, 512), "o": (384, 384), "u": (512, 512), "i": (128, 128)}.get(kind, (320, 320))
 g.thumbnail(lim)
 os.makedirs("emberfall/game", exist_ok=True)
 g.save(f"emberfall/game/{item_id}_s{seed}.png")

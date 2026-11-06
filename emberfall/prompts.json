@@ -4,13 +4,21 @@
   "m": "isometric 3/4 top-down view, single creature, full body, centered, dark gothic fantasy action RPG sprite, gritty hand-painted texture, muted desaturated earthy colors, dramatic rim light, high detail, plain white background",
   "x": "isometric 3/4 top-down view, single huge boss creature, full body, centered, dark gothic fantasy action RPG boss sprite, menacing, gritty hand-painted texture, muted colors with glowing accents, dramatic rim light, high detail, plain white background",
   "n": "full body, standing, front three-quarter view, single character, centered, dark gothic fantasy RPG townsperson sprite, gritty hand-painted, muted earthy colors, soft warm light, realistic proportions, high detail, plain white background",
-  "b": "isometric view, 3/4 top-down angle, single building, centered, dark gothic fantasy action RPG environment asset, weathered hand-painted textures, warm desert light, high detail, plain white background"
+  "b": "isometric view, 3/4 top-down angle, single building, centered, dark gothic fantasy action RPG environment asset, weathered hand-painted textures, warm desert light, high detail, plain white background",
+  "t": "seamless tileable texture, flat top-down orthographic view, no perspective, no shadows cast, even lighting, dark fantasy action RPG ground texture, hand-painted, rich detail, muted earthy colors, fills the whole frame",
+  "o": "isometric 3/4 top-down view, single object, centered, premium dark gothic fantasy action RPG prop, ornate, finely detailed hand-painted texture, weathered metal and stone, dramatic warm rim light, high detail, plain white background",
+  "u": "single game UI element, front view, centered, luxurious dark gothic fantasy RPG interface, ornate engraved bronze and antique gold filigree, dark leather and obsidian inlays, subtle red gemstones, polished, high detail, symmetrical, plain white background",
+  "i": "square skill icon, dark gothic fantasy action RPG ability icon, dramatic painterly illustration filling the whole square, strong silhouette, glowing accents, rich contrast, no border, no frame, no text"
  },
  "_negative": "text, watermark, signature, logo, letters, cropped, cut off, blurry, lowres, photo, cartoon, chibi, cute, bright saturated colors, frame, border, multiple objects, collage, grid, scenery background, landscape, sky, round base, pedestal, platform, ground tile",
  "_neg_extra": {
   "m": "multiple creatures, extra limbs, deformed",
   "x": "multiple creatures, deformed, nsfw",
-  "n": "multiple characters, extra limbs, bad hands, deformed, nsfw"
+  "n": "multiple characters, extra limbs, bad hands, deformed, nsfw",
+  "t": "objects, characters, perspective, horizon, vignette, border, frame",
+  "o": "characters, people, multiple objects",
+  "u": "text, letters, numbers, characters, people, perspective",
+  "i": "text, letters, border, frame, multiple panels"
  },
  "items": [
   {
@@ -188,6 +196,582 @@
    "w": 1024,
    "h": 1024,
    "prompt": "straight segment of thick sandstone city wall with crenellations, weathered blocks"
+  },
+  {
+   "id": "t_sand",
+   "cat": "텍스처",
+   "kind": "t",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "desert sand ground with fine ripples, scattered pebbles and dry cracks"
+  },
+  {
+   "id": "t_sandstone",
+   "cat": "텍스처",
+   "kind": "t",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "worn sandstone paving slabs of irregular sizes, sand in the joints"
+  },
+  {
+   "id": "t_cobble",
+   "cat": "텍스처",
+   "kind": "t",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "old dark cobblestone road, mossy gaps, worn rounded stones"
+  },
+  {
+   "id": "t_grass",
+   "cat": "텍스처",
+   "kind": "t",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "dark dry wild grass ground with patches of dirt and small stones, gloomy moor"
+  },
+  {
+   "id": "t_dirt",
+   "cat": "텍스처",
+   "kind": "t",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "packed dark earth path with roots and gravel"
+  },
+  {
+   "id": "t_dungeon",
+   "cat": "텍스처",
+   "kind": "t",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "ancient dungeon floor of large cracked grey stone tiles, faint blood stains, dust"
+  },
+  {
+   "id": "t_crypt",
+   "cat": "텍스처",
+   "kind": "t",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "catacomb floor of carved stone with faded engraved runes and bone fragments"
+  },
+  {
+   "id": "t_cave",
+   "cat": "텍스처",
+   "kind": "t",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "rough cave floor of damp dark rock, small puddles, gravel"
+  },
+  {
+   "id": "t_marsh",
+   "cat": "텍스처",
+   "kind": "t",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "murky swamp mud with shallow dark water and rotting reeds"
+  },
+  {
+   "id": "t_palace",
+   "cat": "텍스처",
+   "kind": "t",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "polished desert palace floor, sandstone and turquoise mosaic tiles, geometric pattern"
+  },
+  {
+   "id": "o_chest",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "heavy wooden treasure chest with iron bands and a large lock, closed"
+  },
+  {
+   "id": "o_chest_gold",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "ornate golden reliquary chest with engraved filigree and a red gem, closed"
+  },
+  {
+   "id": "o_barrel",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "old oak barrel with rusty iron hoops"
+  },
+  {
+   "id": "o_crate",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "stack of two weathered wooden supply crates with rope"
+  },
+  {
+   "id": "o_urn",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "tall cracked clay funeral urn with faded painted bands"
+  },
+  {
+   "id": "o_sarcophagus",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "stone sarcophagus with carved lid of a sleeping figure, cracked corner"
+  },
+  {
+   "id": "o_shrine",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "ancient stone shrine altar with a glowing rune basin, carved pillars, offering candles"
+  },
+  {
+   "id": "o_well",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "old round stone well with a wooden crank and rope bucket"
+  },
+  {
+   "id": "o_waypoint",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "circular ancient teleport platform of carved stone with glowing blue arcane runes"
+  },
+  {
+   "id": "o_stash",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "large iron-bound storage trunk with brass corners and a padlock"
+  },
+  {
+   "id": "o_cairn",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "tall cairn of stacked flat stones with a faint red rune glow"
+  },
+  {
+   "id": "o_portal_blue",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "swirling blue magic portal standing upright, oval, arcane sparks"
+  },
+  {
+   "id": "o_portal_red",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "swirling blood red magic portal standing upright, oval, embers"
+  },
+  {
+   "id": "o_torch",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "iron standing brazier with burning fire"
+  },
+  {
+   "id": "o_bones",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "pile of old skulls and bones on the ground"
+  },
+  {
+   "id": "o_deadtree",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "twisted leafless dead tree with gnarled branches"
+  },
+  {
+   "id": "o_palm",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "desert date palm tree with dry fronds"
+  },
+  {
+   "id": "o_rock",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "cluster of weathered desert boulders"
+  },
+  {
+   "id": "o_obelisk",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "weathered sandstone obelisk with carved hieroglyph-like symbols"
+  },
+  {
+   "id": "o_cage",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "hanging iron prisoner cage, rusted bars, locked"
+  },
+  {
+   "id": "o_anvil",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "blacksmith anvil on a tree stump with hammer and tongs"
+  },
+  {
+   "id": "o_fountain",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "round desert town fountain of carved sandstone with flowing water"
+  },
+  {
+   "id": "u_button",
+   "cat": "UI",
+   "kind": "u",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "wide horizontal button plate, rounded rectangle, dark center panel, ornate metal border"
+  },
+  {
+   "id": "u_button_round",
+   "cat": "UI",
+   "kind": "u",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "round action button frame, ornate ring, dark center"
+  },
+  {
+   "id": "u_panel",
+   "cat": "UI",
+   "kind": "u",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "large rectangular window frame panel, ornate corners, dark textured center"
+  },
+  {
+   "id": "u_slot",
+   "cat": "UI",
+   "kind": "u",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "square inventory slot frame, thin ornate border, dark recessed center"
+  },
+  {
+   "id": "u_orb",
+   "cat": "UI",
+   "kind": "u",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "ornate circular frame for a health orb, demonic claws holding the ring, empty dark glass center"
+  },
+  {
+   "id": "u_tab",
+   "cat": "UI",
+   "kind": "u",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "small tab button plate, trapezoid shape, ornate border, dark center"
+  },
+  {
+   "id": "u_menu",
+   "cat": "UI",
+   "kind": "u",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "small round menu button with three horizontal gold bars in the center"
+  },
+  {
+   "id": "u_divider",
+   "cat": "UI",
+   "kind": "u",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "long thin horizontal ornamental divider line with a central gem"
+  },
+  {
+   "id": "u_scroll",
+   "cat": "UI",
+   "kind": "u",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "vertical slim scrollbar track with an ornate grip knob"
+  },
+  {
+   "id": "u_tooltip",
+   "cat": "UI",
+   "kind": "u",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "tooltip box frame, dark translucent center, thin ornate gold edges"
+  },
+  {
+   "id": "i_bash",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a powerful overhead mace strike knocking an enemy back with a shockwave"
+  },
+  {
+   "id": "i_leap",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a warrior leaping high into the air against a stormy sky"
+  },
+  {
+   "id": "i_dswing",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "two blades swinging in crossing arcs leaving bright trails"
+  },
+  {
+   "id": "i_stun",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a heavy blow causing dizzy stars and a cracked skull silhouette"
+  },
+  {
+   "id": "i_dthrow",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "two spinning throwing axes flying forward"
+  },
+  {
+   "id": "i_leapatk",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a warrior diving down from above with a weapon, impact crater"
+  },
+  {
+   "id": "i_conc",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a focused warrior aura, golden concentric rings around a fist"
+  },
+  {
+   "id": "i_frenzy",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "whirling blood-red slashes, rage and speed lines"
+  },
+  {
+   "id": "i_whirl",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a warrior spinning like a tornado with blades, dust vortex"
+  },
+  {
+   "id": "i_berserk",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a screaming warrior face glowing with purple magical fury"
+  },
+  {
+   "id": "i_mblade",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "crossed swords with a glowing edge"
+  },
+  {
+   "id": "i_maxe",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a battle axe with glowing runes"
+  },
+  {
+   "id": "i_mmace",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a spiked flail and mace crossed, metal sheen"
+  },
+  {
+   "id": "i_mpole",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a long halberd blade with a red ribbon"
+  },
+  {
+   "id": "i_mthrow",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a hand gripping a javelin ready to throw"
+  },
+  {
+   "id": "i_mspear",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a spear tip glinting with light"
+  },
+  {
+   "id": "i_incsta",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a heart surrounded by green swirling vigor"
+  },
+  {
+   "id": "i_iron",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "skin turning into iron plates on an arm"
+  },
+  {
+   "id": "i_incspd",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "winged boot with speed lines"
+  },
+  {
+   "id": "i_natres",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a shield of four elemental colors, fire ice lightning poison"
+  },
+  {
+   "id": "i_howl",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a warrior roaring with sound waves scaring shadows away"
+  },
+  {
+   "id": "i_fpot",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a hand pulling a red potion from a fallen corpse"
+  },
+  {
+   "id": "i_taunt",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "an enemy drawn toward a warrior by red glowing lines"
+  },
+  {
+   "id": "i_shout",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a warrior shouting with golden shield aura"
+  },
+  {
+   "id": "i_fitem",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "glittering treasure falling from a corpse pile"
+  },
+  {
+   "id": "i_bcry",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a war cry weakening enemies, dark purple sound blast"
+  },
+  {
+   "id": "i_bo",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a warrior raising a banner, golden light boosting allies"
+  },
+  {
+   "id": "i_grim",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a grim totem of skulls on a pole emitting fear"
+  },
+  {
+   "id": "i_wcry",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "an explosive roar stunning enemies, shockwave of dust"
+  },
+  {
+   "id": "i_bcmd",
+   "cat": "스킬",
+   "kind": "i",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "a war horn blowing with golden runes rising"
   }
  ]
 }

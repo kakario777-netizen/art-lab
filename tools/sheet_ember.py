@@ -18,7 +18,7 @@ groups = {}
 for f in fs:
     iid = os.path.basename(f).rsplit("_s", 1)[0]
     groups.setdefault(cat.get(iid, "기타"), []).append(f)
-names = {"몬스터": "monsters", "보스": "bosses", "NPC": "npcs", "건물": "buildings"}
+names = {"몬스터": "monsters", "보스": "bosses", "NPC": "npcs", "건물": "buildings", "텍스처": "textures", "오브젝트": "objects", "UI": "ui", "스킬": "skills"}
 for g, files in groups.items():
     sheet(files, f"emberfall/sheet_{names.get(g, 'etc')}.jpg")
 sheet(fs, "emberfall/sheet.jpg", W=200)
