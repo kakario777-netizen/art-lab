@@ -1,0 +1,193 @@
+{
+ "_note": "엠버폴(디아2풍) 게임 그림. 디아2의 자리·역할은 따르되 생김새는 새로 정함 — 원작 몬스터·보스·NPC의 고유한 특징(예: 거미 다리, 특정 갑옷·얼굴)은 따라 하지 않음. 흰 배경 → 배경 지움 → 게임 크기로 줄임",
+ "_style": {
+  "m": "isometric 3/4 top-down view, single creature, full body, centered, dark gothic fantasy action RPG sprite, gritty hand-painted texture, muted desaturated earthy colors, dramatic rim light, high detail, plain white background",
+  "x": "isometric 3/4 top-down view, single huge boss creature, full body, centered, dark gothic fantasy action RPG boss sprite, menacing, gritty hand-painted texture, muted colors with glowing accents, dramatic rim light, high detail, plain white background",
+  "n": "full body, standing, front three-quarter view, single character, centered, dark gothic fantasy RPG townsperson sprite, gritty hand-painted, muted earthy colors, soft warm light, realistic proportions, high detail, plain white background",
+  "b": "isometric view, 3/4 top-down angle, single building, centered, dark gothic fantasy action RPG environment asset, weathered hand-painted textures, warm desert light, high detail, plain white background"
+ },
+ "_negative": "text, watermark, signature, logo, letters, cropped, cut off, blurry, lowres, photo, cartoon, chibi, cute, bright saturated colors, frame, border, multiple objects, collage, grid, scenery background, landscape, sky, round base, pedestal, platform, ground tile",
+ "_neg_extra": {
+  "m": "multiple creatures, extra limbs, deformed",
+  "x": "multiple creatures, deformed, nsfw",
+  "n": "multiple characters, extra limbs, bad hands, deformed, nsfw"
+ },
+ "items": [
+  {
+   "id": "m_sandleaper",
+   "cat": "몬스터",
+   "kind": "m",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "hunched desert lizard-imp with long powerful hind legs for leaping, cracked sand-colored scales, bony neck frill, clawed hands, crouched ready to pounce"
+  },
+  {
+   "id": "m_huntress",
+   "cat": "몬스터",
+   "kind": "m",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "feral desert huntress warrior woman wearing a jackal skull mask, spotted hide wraps, bone-tipped spear, crouching stance"
+  },
+  {
+   "id": "m_scarab",
+   "cat": "몬스터",
+   "kind": "m",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "giant armored desert beetle with dull bronze carapace, single curved horn, faint blue static sparks on its shell"
+  },
+  {
+   "id": "m_vulture",
+   "cat": "몬스터",
+   "kind": "m",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "huge undead carrion vulture, ragged black feathers, bald red wrinkled neck, wings half spread, hunched"
+  },
+  {
+   "id": "m_sandraider",
+   "cat": "몬스터",
+   "kind": "m",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "hulking desert marauder beast-man with boar tusks, sun-scorched skin, tattered sand cloak, curved crude scimitar"
+  },
+  {
+   "id": "m_mummy",
+   "cat": "몬스터",
+   "kind": "m",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "shambling ancient mummy wrapped in yellowed dusty bandages, cracked bronze funeral mask, faint green glowing eyes, arms reaching"
+  },
+  {
+   "id": "m_guardian",
+   "cat": "몬스터",
+   "kind": "m",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "tall gaunt tomb guardian with a jackal-shaped bronze helmet, rotting linen robes, long obsidian scythe"
+  },
+  {
+   "id": "m_viper",
+   "cat": "몬스터",
+   "kind": "m",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "serpent warrior with a hooded snake head, green and black scales, human arms holding a bronze khopesh, coiled tail"
+  },
+  {
+   "id": "m_maggot",
+   "cat": "몬스터",
+   "kind": "m",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "huge pale segmented sand larva worm, circular mouth ringed with teeth, glistening slime"
+  },
+  {
+   "id": "x_queen_anguish",
+   "cat": "보스",
+   "kind": "x",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "demon queen of anguish, tall gaunt figure in a long gown of barbed iron chains, mask of black thorns, four thin arms holding hooked daggers, sickly green venom mist around her feet"
+  },
+  {
+   "id": "x_rot_priest",
+   "cat": "보스",
+   "kind": "x",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "towering undead high priest of rot, gaunt mummified body, rusted ritual crown, rotting purple robes, staff topped with a skull, green plague mist"
+  },
+  {
+   "id": "x_fallen_ranger",
+   "cat": "보스",
+   "kind": "x",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "fallen undead ranger woman, ashen skin, glowing pale eyes, crow-feather mantle, black longbow, wisps of dark smoke"
+  },
+  {
+   "id": "n_smith",
+   "cat": "NPC",
+   "kind": "n",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "sturdy desert blacksmith woman, short cropped hair, soot-stained leather apron, bronze arm guards, heavy hammer"
+  },
+  {
+   "id": "n_sage",
+   "cat": "NPC",
+   "kind": "n",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "old desert sage wizard with long grey beard, deep indigo robes with star embroidery, wrapped turban, holding a scroll"
+  },
+  {
+   "id": "n_apothecary",
+   "cat": "NPC",
+   "kind": "n",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "elderly hunched desert apothecary man, round spectacles, satchel full of potion vials, walking cane"
+  },
+  {
+   "id": "n_innkeeper",
+   "cat": "NPC",
+   "kind": "n",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "shady desert innkeeper man, sly grin, red fez hat, gold rings, striped vest"
+  },
+  {
+   "id": "n_mercenary",
+   "cat": "NPC",
+   "kind": "n",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "grizzled desert mercenary captain, scarred face, sand-colored leather armor, tall spear, red sash"
+  },
+  {
+   "id": "n_widow",
+   "cat": "NPC",
+   "kind": "n",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "grieving desert widow innkeeper woman, dark headscarf, plain long dress, tired kind eyes"
+  },
+  {
+   "id": "b_house",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "flat-roofed sandstone desert house, wooden roof beams poking out, arched doorway, faded striped cloth awning, clay pots"
+  },
+  {
+   "id": "b_palace",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "grand desert palace entrance, sandstone walls, onion dome, tall arched gate, hanging red banners, two torches"
+  },
+  {
+   "id": "b_stall",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "desert market stall with striped cloth canopy on wooden poles, baskets of spices and clay jars"
+  },
+  {
+   "id": "b_wall",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "straight segment of thick sandstone city wall with crenellations, weathered blocks"
+  }
+ ]
+}
