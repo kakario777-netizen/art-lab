@@ -81,4 +81,4 @@ jobs:
           mkdir -p out && cp dl/*.png out/ 2>/dev/null || true
           pip install --quiet pillow && python tools/sheet.py
           git config user.name "art-bot"; git config user.email "art-bot@users.noreply.github.com"
-          git add out sheet.jpg && git commit -m "그림 생성 결과" && git push || echo "변경 없음"
+          git add out sheet.jpg && git commit -m "그림 생성 결과" && (git pull --rebase origin main && git push) || echo "변경 없음"
