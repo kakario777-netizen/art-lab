@@ -16,6 +16,8 @@ torch.set_num_threads(os.cpu_count())
 flags = open("/proc/cpuinfo").read()
 # bf16 하드웨어 지원 CPU는 bf16이 빠르고, 없는 CPU는 fp32가 훨씬 빠름
 DT = torch.bfloat16 if ("avx512_bf16" in flags or "amx_bf16" in flags) else torch.float32
+if it.get("init_file") or it.get("init_search"):
+    DT = torch.float32  # 밑그림(img2img)은 bf16에서 자료형 충돌이 나서 fp32로
 print("정밀도:", DT, flush=True)
 os.makedirs("out", exist_ok=True)
 t0 = time.time()
