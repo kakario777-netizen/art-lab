@@ -63,7 +63,7 @@ jobs:
   gen:
     needs: [plan, model]
     runs-on: ubuntu-latest
-    timeout-minutes: 100
+    timeout-minutes: 35
     strategy:
       fail-fast: false
       max-parallel: 6
