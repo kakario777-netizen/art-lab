@@ -65,8 +65,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: 디스크 비우기
         run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
-      - uses: actions/cache/restore@v4
-        with: {path: ~/hfcache, key: "${{ needs.plan.outputs.key }}", fail-on-cache-miss: true}
+      - id: r
+        uses: actions/cache/restore@v4
+        with: {path: ~/hfcache, key: "${{ needs.plan.outputs.key }}"}
+      - name: 모델 없으면 직접 받기
+        if: steps.r.outputs.cache-hit != 'true'
+        run: |
+          pip install --quiet huggingface_hub
+          for i in 1 2 3 4 5; do
+            HF_HOME=~/hfcache python -c "from huggingface_hub import snapshot_download as d; d('${{ inputs.model }}', allow_patterns=['*.json','*.txt','unet/*.safetensors','vae/*.safetensors','text_encoder*/*.safetensors','tokenizer*/*'], max_workers=2)" && break
+            sleep $((i*60))
+          done
       - name: 설치
         run: |
           pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
@@ -74,8 +83,11 @@ jobs:
       - name: 생성 ${{ matrix.id }} / ${{ matrix.seed }}
         env: {STEPS: "${{ inputs.steps }}", MODEL: "${{ inputs.model }}", HF_HOME: /home/runner/hfcache, HF_HUB_OFFLINE: "1"}
         run: python tools/gen_tribez.py ${{ matrix.id }} ${{ matrix.seed }}
-      - uses: actions/upload-artifact@v4
-        with: {name: "tz-${{ matrix.id }}-${{ matrix.seed }}", path: "tribez/out/\ntribez/game/"}
+      - name: 바로 저장소에 올리기
+        run: |
+          git config user.name "art-bot"; git config user.email "art-bot@users.noreply.github.com"
+          git add tribez/out tribez/game && git commit -qm "트라이브 그림 ${{ matrix.id }} s${{ matrix.seed }}" || exit 0
+          for i in $(seq 1 10); do git pull --rebase -q && git push -q && break; sleep $((RANDOM%20+5)); done
 
   collect:
     needs: gen
@@ -83,12 +95,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
-        with: {path: dl, pattern: "tz-*", merge-multiple: true}
       - name: 저장소에 올리기
         run: |
-          mkdir -p tribez/out tribez/game && cp -r dl/out/* tribez/out/ 2>/dev/null; cp -r dl/game/* tribez/game/ 2>/dev/null; cp dl/*.png tribez/out/ 2>/dev/null; true
+          git pull -q
           pip install --quiet pillow && python tools/sheet_tribez.py
           git config user.name "art-bot"; git config user.email "art-bot@users.noreply.github.com"
-          git add tribez && git commit -m "트라이브 빌리지 그림 생성 결과" || exit 0
+          git add tribez && git commit -m "트라이브 빌리지 샘플 시트" || exit 0
           for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
