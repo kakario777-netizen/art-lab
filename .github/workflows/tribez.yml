@@ -3,7 +3,7 @@ name: 트라이브 빌리지 그림 생성 (무료 SDXL Turbo, CPU)
 on:
   workflow_dispatch:
     inputs:
-      ids:   {description: "만들 그림 id (쉼표로, tribez/prompts.json)", default: "hut_1,main_1"}
+      ids:   {description: "만들 그림 id (쉼표로, all 이면 전부)", default: "all"}
       seeds: {description: "시드 (쉼표로)", default: "1,2"}
       steps: {description: "단계 수", default: "8"}
       model: {description: "허깅페이스 모델", default: "Lykon/dreamshaper-xl-v2-turbo"}
@@ -20,11 +20,14 @@ jobs:
       matrix: ${{ steps.m.outputs.matrix }}
       key: ${{ steps.m.outputs.key }}
     steps:
+      - uses: actions/checkout@v4
       - id: m
         run: |
           python3 - <<'PY' >> $GITHUB_OUTPUT
           import json
-          ids = "${{ inputs.ids }}".split(","); seeds = "${{ inputs.seeds }}".split(",")
+          ids = "${{ inputs.ids }}".split(",")
+          if ids == ["all"]:
+              ids = [i["id"] for i in json.load(open("tribez/prompts.json", encoding="utf-8"))["items"]]; seeds = "${{ inputs.seeds }}".split(",")
           print("matrix=" + json.dumps({"include": [{"id": i.strip(), "seed": s.strip()} for i in ids for s in seeds]}))
           print("key=model-" + "${{ inputs.model }}".replace("/", "-"))
           PY
@@ -56,7 +59,7 @@ jobs:
     timeout-minutes: 45
     strategy:
       fail-fast: false
-      max-parallel: 4
+      max-parallel: 8
       matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
@@ -72,7 +75,7 @@ jobs:
         env: {STEPS: "${{ inputs.steps }}", MODEL: "${{ inputs.model }}", HF_HOME: /home/runner/hfcache, HF_HUB_OFFLINE: "1"}
         run: python tools/gen_tribez.py ${{ matrix.id }} ${{ matrix.seed }}
       - uses: actions/upload-artifact@v4
-        with: {name: "tz-${{ matrix.id }}-${{ matrix.seed }}", path: tribez/out/}
+        with: {name: "tz-${{ matrix.id }}-${{ matrix.seed }}", path: "tribez/out/\ntribez/game/"}
 
   collect:
     needs: gen
@@ -84,7 +87,7 @@ jobs:
         with: {path: dl, pattern: "tz-*", merge-multiple: true}
       - name: 저장소에 올리기
         run: |
-          mkdir -p tribez/out && cp dl/*.png tribez/out/ 2>/dev/null || true
+          mkdir -p tribez/out tribez/game && cp -r dl/out/* tribez/out/ 2>/dev/null; cp -r dl/game/* tribez/game/ 2>/dev/null; cp dl/*.png tribez/out/ 2>/dev/null; true
           pip install --quiet pillow && python tools/sheet_tribez.py
           git config user.name "art-bot"; git config user.email "art-bot@users.noreply.github.com"
           git add tribez && git commit -m "트라이브 빌리지 그림 생성 결과" || exit 0

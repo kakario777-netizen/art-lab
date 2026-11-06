@@ -15,15 +15,24 @@ print(f"모델 로드 {time.time()-t0:.0f}초", flush=True)
 steps = int(os.environ.get("STEPS", "8"))
 def cb(p, i, t, kw):
     print(f"step {i+1}/{steps} {time.time()-t0:.0f}s", flush=True); return kw
-img = pipe(prompt=it["prompt"] + ", " + cfg["_style"], negative_prompt=cfg["_negative"],
+kind = it.get("kind", "b")
+style = cfg["_style"][kind] if isinstance(cfg["_style"], dict) else cfg["_style"]
+neg = cfg["_negative"] + (", " + cfg.get("_neg_extra", {}).get(kind, "") if cfg.get("_neg_extra", {}).get(kind) else "")
+img = pipe(prompt=it["prompt"] + ", " + style, negative_prompt=neg,
            width=it["w"], height=it["h"], num_inference_steps=steps, guidance_scale=2.0,
            generator=torch.Generator().manual_seed(seed), callback_on_step_end=cb).images[0]
 os.makedirs("tribez/out", exist_ok=True)
-img.save(f"tribez/out/{item_id}_s{seed}_raw.png")
+img.convert("RGB").save(f"tribez/out/{item_id}_s{seed}_raw.jpg", quality=85)
 from rembg import remove, new_session
 cut = remove(img, session=new_session("isnet-general-use"))
 bb = cut.getchannel("A").getbbox()
 if bb:
     cut = cut.crop(bb)
 cut.save(f"tribez/out/{item_id}_s{seed}.png")
+# 게임 크기 (가로 최대 512, 인물은 높이 256)
+g = cut.copy()
+lim = (512, 512) if kind == "b" else ((256, 256) if kind == "c" else (256, 256))
+g.thumbnail(lim)
+os.makedirs("tribez/game", exist_ok=True)
+g.save(f"tribez/game/{item_id}_s{seed}.png")
 print(f"완료 {time.time()-t0:.0f}초")

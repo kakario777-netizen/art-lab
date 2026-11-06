@@ -1,15 +1,447 @@
 {
- "_note": "트라이브 빌리지(tribez-village) 게임 그림. 원작 그림을 따라 하지 않고 설명만으로 새로 그림. 흰 배경 → 배경 지움",
- "_style": "isometric view, 3/4 top-down angle, single game asset, centered, casual mobile city-builder game art, stylized 3d render, soft hand-painted textures, warm sunny lighting, clean edges, vibrant colors, high detail, plain white background, no ground plane",
- "_negative": "text, watermark, signature, logo, people, characters, multiple buildings, cropped, cut off, blurry, lowres, photo, realistic photo, dark, night, frame, border, grass field background, scenery, landscape",
+ "_note": "트라이브 빌리지 게임 그림. 원작 그림을 따라 하지 않고 설명 문장만으로 새로 그림. 흰 배경 → 배경 지움 → 게임 크기로 줄임",
+ "_style": {
+  "b": "isometric view, 3/4 top-down angle, single game asset, centered, casual mobile village-builder game art, stylized 3d render, soft hand-painted textures, warm sunny lighting, clean silhouette, vibrant colors, high detail, plain white background",
+  "c": "full body, standing, front three-quarter view, single character, centered, casual mobile game character art, stylized 3d render, chibi-like proportions with big head, friendly cartoon face, soft hand-painted textures, warm lighting, vibrant colors, plain white background",
+  "p": "portrait, head and shoulders, single character, centered, casual mobile game character portrait, stylized 3d render, friendly cartoon face, big expressive eyes, soft hand-painted textures, warm lighting, vibrant colors, plain white background"
+ },
+ "_negative": "text, watermark, signature, logo, letters, cropped, cut off, blurry, lowres, photo, photorealistic, dark, night, frame, border, multiple objects, collage, grid, scenery background, landscape, sky, round base, pedestal, platform, diorama base, ground tile",
+ "_neg_extra": {
+  "c": "multiple characters, extra limbs, bad hands, deformed, nsfw",
+  "p": "multiple characters, deformed, nsfw, body"
+ },
  "items": [
-  {"id": "hut_1", "w": 1024, "h": 1024, "prompt": "small primitive tribal hut, round wall of wooden stakes, conical thatched straw roof, small doorway, a clay pot beside it"},
-  {"id": "hut_2", "w": 1024, "h": 1024, "prompt": "primitive tribal hut, round woven reed wall, thick golden thatched straw roof with bound top, wooden door, firewood stack beside"},
-  {"id": "hut_4", "w": 1024, "h": 1024, "prompt": "large tribal round hut on a stone base, thick layered golden thatched roof, carved wooden door frame with painted red patterns, drying rack and pots beside"},
-  {"id": "main_1", "w": 1024, "h": 1024, "prompt": "tribal chief's longhouse, big thatched straw roof, wooden log walls, carved colorful totem pole beside the entrance, campfire with stones in front"},
-  {"id": "warehouse_1", "w": 1024, "h": 1024, "prompt": "primitive tribal storehouse on wooden stilts, thatched roof, ladder, baskets of fruit and sacks of grain, stacked logs"},
-  {"id": "ancient_bar_1", "w": 1024, "h": 1024, "prompt": "primitive tribal drinks stall, open hut with thatched roof on wooden posts, wooden counter with coconut cups and fruit, bamboo stools"},
-  {"id": "forester_1", "w": 1024, "h": 1024, "prompt": "primitive woodcutter's hut with thatched roof, stack of chopped logs, tree stump with stone axe stuck in it"},
-  {"id": "nice_hut_1", "w": 1024, "h": 1024, "prompt": "pretty tribal clay hut, round adobe wall painted with red and white tribal patterns, conical thatched roof, flower pots by the door"}
+  {
+   "id": "hut_1",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "tiny primitive tribal tent hut made of animal hides stretched over wooden poles, rope ties, small clay pot beside"
+  },
+  {
+   "id": "hut_2",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "small primitive tribal hut, round wall of wooden stakes, conical golden thatched straw roof, small doorway"
+  },
+  {
+   "id": "hut_3",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "tribal round hut, woven reed wall, thick thatched straw roof with bound top, low stake fence and firewood beside"
+  },
+  {
+   "id": "hut_4",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "large tribal round hut on a low stone base, thick layered golden thatched roof, carved wooden door frame painted with red patterns, pots and drying rack beside"
+  },
+  {
+   "id": "nice_hut_1",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "pretty tribal adobe hut, round clay wall painted with white zigzag patterns, conical thatched roof"
+  },
+  {
+   "id": "nice_hut_2",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "pretty tribal adobe hut with red and white painted patterns, conical thatched roof, flower pots by the door"
+  },
+  {
+   "id": "nice_hut_3",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "decorated tribal adobe hut, painted red and white tribal patterns, two-tier thatched roof, small drum and flower pots"
+  },
+  {
+   "id": "nice_hut_4",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "grand decorated tribal adobe hut on stone base, colorful painted patterns, two-tier thatched roof with feather ornaments, small carved totem beside"
+  },
+  {
+   "id": "main_1",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "tribal chief's hut, large round hut with tall conical thatched roof, carved colorful totem pole beside the entrance, small campfire with stones"
+  },
+  {
+   "id": "main_2",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "tribal chief's longhouse, wooden log walls, big thatched roof, colorful totem pole, campfire with stones, drum"
+  },
+  {
+   "id": "main_3",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "large tribal chief's longhouse on stone base, two thatched roof levels, two colorful totem poles, campfire, drums, animal skin banners"
+  },
+  {
+   "id": "warehouse_1",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "primitive tribal storehouse on wooden stilts, thatched roof, ladder, baskets of fruit and sacks of grain"
+  },
+  {
+   "id": "warehouse_2",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "bigger tribal storehouse on wooden stilts with wooden deck, thatched roof, many baskets, sacks and clay jars"
+  },
+  {
+   "id": "ancient_bar_1",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "primitive tribal drinks stall, open shelter with thatched roof on wooden posts, wooden counter with coconut cups and fruit, log stools"
+  },
+  {
+   "id": "ancient_bar_2",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "tribal juice bar hut, round thatched roof on carved posts, counter with fruit bowls, hanging lanterns of gourds, bamboo stools"
+  },
+  {
+   "id": "forester_1",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "primitive woodcutter's hut with thatched roof, stack of chopped logs, tree stump with stone axe stuck in it"
+  },
+  {
+   "id": "forester_2",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "tribal woodcutter's workshop, thatched hut with big log pile, sawhorse with log, stone axes"
+  },
+  {
+   "id": "patch",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "small farm field plot, tilled brown soil rows inside a low wooden twig fence, a few green sprouts"
+  },
+  {
+   "id": "cauldron",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "big black cooking cauldron over campfire on stones, steam, wooden ladle, clay bowls"
+  },
+  {
+   "id": "cafeteria",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "tribal open-air cafeteria, large thatched canopy on posts, long log tables with fruit and bowls, cooking pot"
+  },
+  {
+   "id": "quarry",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "primitive stone quarry, grey rock cliff with cut stone blocks, wooden crane with rope, stone tools, small cart"
+  },
+  {
+   "id": "house",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "big tribal family house, two connected round huts with thatched roofs on stone base, wooden porch"
+  },
+  {
+   "id": "chicken_lair",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "giant straw nest pen for a huge friendly rooster, woven fence of sticks, feeding trough, big egg in straw (no animal)"
+  },
+  {
+   "id": "bonfire",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "tribal bonfire, logs stacked in a cone with bright flames, ring of stones"
+  },
+  {
+   "id": "flowerbed",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "small round flowerbed of colorful tropical flowers bordered with stones"
+  },
+  {
+   "id": "bench",
+   "cat": "건물",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "simple tribal log bench made of a split log on two stumps"
+  },
+  {
+   "id": "tree",
+   "cat": "자연",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "single lush round broadleaf tree, cartoon style"
+  },
+  {
+   "id": "apple_tree",
+   "cat": "자연",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "single small fruit tree with red apples, cartoon style"
+  },
+  {
+   "id": "big_tree",
+   "cat": "자연",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "single huge ancient tree with thick twisted trunk and wide lush crown, roots"
+  },
+  {
+   "id": "stump",
+   "cat": "자연",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "single cut tree stump with roots and a few mushrooms"
+  },
+  {
+   "id": "bush",
+   "cat": "자연",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "single round leafy green bush"
+  },
+  {
+   "id": "berry_bush",
+   "cat": "자연",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "single round bush full of red berries"
+  },
+  {
+   "id": "tall_grass",
+   "cat": "자연",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "single clump of tall wild grass with a few yellow flowers"
+  },
+  {
+   "id": "stone",
+   "cat": "자연",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "single small pile of grey stones"
+  },
+  {
+   "id": "big_stone",
+   "cat": "자연",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "single large grey boulder pile with moss"
+  },
+  {
+   "id": "cave",
+   "cat": "자연",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "rocky hill with a dark cave entrance, moss and grass on top"
+  },
+  {
+   "id": "ruin_hut",
+   "cat": "자연",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "collapsed broken tribal hut, fallen thatched roof, broken wooden stakes, scattered logs"
+  },
+  {
+   "id": "chest",
+   "cat": "자연",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "old wooden treasure chest with bronze bands, closed"
+  },
+  {
+   "id": "gold_vein",
+   "cat": "자연",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "grey rock with shiny gold ore veins"
+  },
+  {
+   "id": "plane_wreck",
+   "cat": "자연",
+   "kind": "b",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "crashed old propeller airplane half buried in jungle plants, rusty green paint"
+  },
+  {
+   "id": "villager_m",
+   "cat": "인물",
+   "kind": "c",
+   "w": 832,
+   "h": 1216,
+   "prompt": "tribal village man, tanned skin, bear-fur hat, leather tunic, bare feet, carrying a stone axe"
+  },
+  {
+   "id": "villager_m2",
+   "cat": "인물",
+   "kind": "c",
+   "w": 832,
+   "h": 1216,
+   "prompt": "tribal village man, bald with bushy beard, green leaf tunic, rope belt"
+  },
+  {
+   "id": "villager_f",
+   "cat": "인물",
+   "kind": "c",
+   "w": 832,
+   "h": 1216,
+   "prompt": "tribal village woman, leopard-print fur dress, long brown hair with bone hair ornament"
+  },
+  {
+   "id": "villager_f2",
+   "cat": "인물",
+   "kind": "c",
+   "w": 832,
+   "h": 1216,
+   "prompt": "tribal village woman, black braided hair, red woven dress, bead necklace"
+  },
+  {
+   "id": "girl_npc",
+   "cat": "인물",
+   "kind": "c",
+   "w": 832,
+   "h": 1216,
+   "prompt": "young tribal girl leader, long auburn hair with flower, green leaf headband, fur top and skirt, bead necklace, confident smile"
+  },
+  {
+   "id": "explorer",
+   "cat": "인물",
+   "kind": "c",
+   "w": 832,
+   "h": 1216,
+   "prompt": "friendly old explorer scientist, round glasses, white mustache, khaki safari outfit and pith helmet, notebook"
+  },
+  {
+   "id": "shaman",
+   "cat": "인물",
+   "kind": "c",
+   "w": 832,
+   "h": 1216,
+   "prompt": "old tribal shaman, wooden mask pushed up on head, feather cloak, carved staff with bones"
+  },
+  {
+   "id": "strongman",
+   "cat": "인물",
+   "kind": "c",
+   "w": 832,
+   "h": 1216,
+   "prompt": "big friendly tribal man with dreadlocks, beard, muscular, bone necklace, fur loincloth"
+  },
+  {
+   "id": "goblin",
+   "cat": "인물",
+   "kind": "c",
+   "w": 832,
+   "h": 1216,
+   "prompt": "small mischievous green furry forest goblin creature with big ears, wooden club, cartoon enemy, cute but grumpy"
+  },
+  {
+   "id": "rooster",
+   "cat": "인물",
+   "kind": "c",
+   "w": 832,
+   "h": 1216,
+   "prompt": "giant friendly rooster, colorful red and golden feathers, big red comb, standing"
+  },
+  {
+   "id": "p_girl",
+   "cat": "초상",
+   "kind": "p",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "young tribal girl leader, long auburn hair with flower, green leaf headband, bead necklace, confident smile"
+  },
+  {
+   "id": "p_explorer",
+   "cat": "초상",
+   "kind": "p",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "friendly old explorer scientist, round glasses, white mustache, pith helmet"
+  },
+  {
+   "id": "p_shaman",
+   "cat": "초상",
+   "kind": "p",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "old tribal shaman, wooden mask pushed up on head, feather cloak"
+  },
+  {
+   "id": "p_strongman",
+   "cat": "초상",
+   "kind": "p",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "big friendly tribal man with dreadlocks and beard, bone necklace"
+  }
  ]
 }
