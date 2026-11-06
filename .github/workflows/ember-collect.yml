@@ -1,0 +1,24 @@
+name: 엠버폴 지난 실행 결과 모으기
+on:
+  workflow_dispatch:
+    inputs:
+      run_id: {required: true}
+permissions: {contents: write, actions: read}
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {path: dl, pattern: "ef-*", merge-multiple: true, run-id: "${{ inputs.run_id }}", github-token: "${{ github.token }}"}
+      - name: 저장소에 올리기
+        run: |
+          ls -R dl | head -30
+          mkdir -p emberfall/out emberfall/game
+          cp -r dl/out/* emberfall/out/ 2>/dev/null || true
+          cp -r dl/game/* emberfall/game/ 2>/dev/null || true
+          cp dl/*.png emberfall/out/ 2>/dev/null || true
+          pip install --quiet pillow && python tools/sheet_ember.py
+          git config user.name "art-bot"; git config user.email "art-bot@users.noreply.github.com"
+          git add emberfall && git commit -m "엠버폴 지난 실행 결과 모으기" || exit 0
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
