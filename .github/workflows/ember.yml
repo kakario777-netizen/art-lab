@@ -26,8 +26,9 @@ jobs:
           python3 - <<'PY' >> $GITHUB_OUTPUT
           import json
           ids = "${{ inputs.ids }}".split(",")
+          seeds = "${{ inputs.seeds }}".split(",")
           if ids == ["all"]:
-              ids = [i["id"] for i in json.load(open("emberfall/prompts.json", encoding="utf-8"))["items"]]; seeds = "${{ inputs.seeds }}".split(",")
+              ids = [i["id"] for i in json.load(open("emberfall/prompts.json", encoding="utf-8"))["items"]]
           print("matrix=" + json.dumps({"include": [{"id": i.strip(), "seed": s.strip()} for i in ids for s in seeds]}))
           print("key=model-" + "${{ inputs.model }}".replace("/", "-"))
           PY
