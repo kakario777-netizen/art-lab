@@ -75,7 +75,7 @@ if it.get("ref"):
 init = commons_photo(it["init_search"]) if it.get("init_search") else None
 if init is not None:
     init = ImageOps.fit(init, (W, H))
-    init.save(f"out/{item_id}_s{seed}_밑그림.jpg", quality=85)
+    init.save(f"out/{item_id}_s{seed}_base_photo.jpg", quality=85)
     pipe = StableDiffusionXLImg2ImgPipeline.from_pipe(pipe)
     kw.update(image=init, strength=it.get("strength", 0.7))
 else:
