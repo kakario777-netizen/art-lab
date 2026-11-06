@@ -159,6 +159,546 @@
     3
    ],
    "prompt": "no humans, game asset, isometric view, single korean traditional gate, iljumun, red wooden pillars, curved giwa tiled roof with dancheong colorful patterns, stone steps, glowing golden light, fantasy anime style, white background, simple background, centered"
+  },
+  {
+   "id": "r_hero",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_hero.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_hero.png",
+   "strength": 0.55,
+   "prompt": "1girl, solo, young girl, 15 years old, brown hair, grey eyes, long single braid, red hair ribbon daenggi, korean traditional clothes, hanbok, gentle smile, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_hero_angry",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_hero_angry.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_hero_angry.png",
+   "strength": 0.55,
+   "prompt": "1girl, solo, young girl, 15 years old, brown hair, grey eyes, long single braid, red hair ribbon, korean traditional clothes, hanbok, angry, determined, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_hero_sad",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_hero_sad.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_hero_sad.png",
+   "strength": 0.55,
+   "prompt": "1girl, solo, young girl, 15 years old, brown hair, grey eyes, long single braid, red hair ribbon, korean traditional clothes, hanbok, sad, teary eyes, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_hero_surprised",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_hero_surprised.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_hero_surprised.png",
+   "strength": 0.55,
+   "prompt": "1girl, solo, young girl, 15 years old, brown hair, grey eyes, long single braid, red hair ribbon, korean traditional clothes, hanbok, surprised, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_hero_physician",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_hero_physician.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_hero_physician.png",
+   "strength": 0.55,
+   "prompt": "1girl, solo, young girl, 15 years old, brown hair, grey eyes, long single braid, royal physician uniform, korean traditional clothes, hanbok, calm smile, medicine box, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_hero_disguise",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_hero_disguise.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_hero_disguise.png",
+   "strength": 0.55,
+   "prompt": "1girl, solo, young girl, 15 years old, brown hair, grey eyes, girl disguised as a boy, straw hat paeraengi, plain hemp jeogori and baji, herbalist boy outfit, smile, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_hero_disguise_angry",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_hero_disguise_angry.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_hero_disguise_angry.png",
+   "strength": 0.55,
+   "prompt": "1girl, solo, young girl, 15 years old, brown hair, grey eyes, girl disguised as a boy, straw hat paeraengi, plain hemp jeogori and baji, herbalist boy outfit, angry, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_hero_disguise_sad",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_hero_disguise_sad.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_hero_disguise_sad.png",
+   "strength": 0.55,
+   "prompt": "1girl, solo, young girl, 15 years old, brown hair, grey eyes, girl disguised as a boy, straw hat paeraengi, plain hemp jeogori and baji, herbalist boy outfit, sad, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_hero_disguise_surprised",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_hero_disguise_surprised.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_hero_disguise_surprised.png",
+   "strength": 0.55,
+   "prompt": "1girl, solo, young girl, 15 years old, brown hair, grey eyes, girl disguised as a boy, straw hat paeraengi, plain hemp jeogori and baji, herbalist boy outfit, surprised, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_friend",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_friend.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_friend.png",
+   "strength": 0.55,
+   "prompt": "1girl, solo, young girl, 15 years old, black hair, twin braids, korean traditional clothes, hanbok, cheerful grin, energetic, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_friend_worried",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_friend_worried.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_friend_worried.png",
+   "strength": 0.55,
+   "prompt": "1girl, solo, young girl, 15 years old, black hair, twin braids, korean traditional clothes, hanbok, worried expression, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_darae_court",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_darae_court.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_darae_court.png",
+   "strength": 0.55,
+   "prompt": "1girl, solo, young court lady, gungnyeo, black hair in braided bun, korean traditional clothes, hanbok, green jeogori, deep blue skirt, smile, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_baegun",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_baegun.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_baegun.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, old man, kind elderly herbalist, long white beard, gentle smile, korean traditional clothes, hanbok, white hemp robe, wooden staff, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_baegun_boss",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_baegun_boss.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_baegun_boss.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, old man, sinister elderly villain, long white beard, cold glare, korean traditional clothes, hanbok, black robe, wooden staff, dark aura, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_heo",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_heo.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_heo.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, middle aged man, kind physician, grey topknot, gentle face, korean traditional clothes, hanbok, gat hat, grey dopo robe, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_shadow",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_shadow.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_shadow.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, sinister man, black gat hat, black dopo robe, glowing red eyes, shadowy face, evil grin, dark aura, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_seohwi",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_seohwi.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_seohwi.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, handsome young man, wavy blonde hair, low ponytail, round glasses, blue eyes, korean traditional clothes, hanbok, dark dopo robe, calm smirk, intellectual, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_seohwi_battle",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_seohwi_battle.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_seohwi_battle.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, handsome young man, wavy blonde hair, round glasses, blue eyes, korean traditional clothes, hanbok, fighting stance, fists raised, dynamic pose, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_jongsagwan",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_jongsagwan.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_jongsagwan.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, handsome young man, black hair, joseon police officer, black cheollik uniform, jeollip hat with red tassel, sword, stern face, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_jongsagwan_blush",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_jongsagwan_blush.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_jongsagwan_blush.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, handsome young man, black hair, joseon police officer, black cheollik uniform, jeollip hat, blushing, looking away, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_king",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_king.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_king.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, joseon king, red dragon robe gonryongpo, ikseongwan crown, dignified, seated on throne, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_jumo",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_jumo.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_jumo.png",
+   "strength": 0.55,
+   "prompt": "1girl, solo, middle aged woman, tavern hostess, korean traditional clothes, hanbok, apron, hair in bun, cheerful, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_muljangsu",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_muljangsu.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_muljangsu.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, water seller man, korean traditional clothes, hanbok, carrying water buckets on shoulder pole, cheerful, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_yeotjangsu",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_yeotjangsu.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_yeotjangsu.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, taffy seller man, korean traditional clothes, hanbok, holding big scissors and yeot candy board, funny smile, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_yakjae",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_yakjae.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_yakjae.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, middle aged herb merchant, korean traditional clothes, hanbok, gat hat, holding herb bundle, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_pojol",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_pojol.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_pojol.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, joseon constable soldier, pojol, red and blue uniform, black hat, holding spear, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_pojol_battle",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_pojol_battle.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_pojol_battle.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, joseon constable soldier, pojol, uniform, spear attack pose, angry, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_sunra",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_sunra.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_sunra.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, joseon night patrol guard, sunra, holding lantern and club, stern, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_walpae",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_walpae.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_walpae.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, joseon street thug, walpae, rough, headband, rolled up sleeves, smirk, muscular, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_addict",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "ref": "ref/c_addict.png",
+   "ip_scale": 0.5,
+   "init_file": "ref/c_addict.png",
+   "strength": 0.55,
+   "prompt": "1boy, solo, sickly man, pale face, dark circles, korean traditional clothes, hanbok, ragged clothes, crazed eyes, detailed lineart, intricate clothing details, dark gradient background, simple background, full body, standing, joseon dynasty korea"
+  },
+  {
+   "id": "r_yakbang",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "init_file": "ref/bg_yakbang.jpg",
+   "strength": 0.55,
+   "prompt": "no humans, scenery, detailed background, joseon dynasty korea, korean traditional architecture, giwa tiled roof, interior of traditional herbal medicine shop, wooden drawers of herbs, lantern light, night"
+  },
+  {
+   "id": "r_alley",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "init_file": "ref/bg_alley.jpg",
+   "strength": 0.55,
+   "prompt": "no humans, scenery, detailed background, joseon dynasty korea, korean traditional architecture, giwa tiled roof, narrow hanok alley at night, stone walls, moonlight, lanterns"
+  },
+  {
+   "id": "r_byeolchae",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "init_file": "ref/bg_byeolchae.jpg",
+   "strength": 0.55,
+   "prompt": "no humans, scenery, detailed background, joseon dynasty korea, korean traditional architecture, giwa tiled roof, hanok annex house in bamboo forest, mountain valley, mist"
+  },
+  {
+   "id": "r_jangteo",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "init_file": "ref/bg_jangteo.jpg",
+   "strength": 0.55,
+   "prompt": "no humans, scenery, detailed background, joseon dynasty korea, korean traditional architecture, giwa tiled roof, busy traditional market street, stalls, cloth awnings, daytime"
+  },
+  {
+   "id": "r_street_ink",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "init_file": "ref/bg_street_ink.jpg",
+   "strength": 0.55,
+   "prompt": "no humans, scenery, detailed background, joseon dynasty korea, korean traditional architecture, giwa tiled roof, hanyang city street, hanok shops, evening"
+  },
+  {
+   "id": "r_den",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "init_file": "ref/bg_den.jpg",
+   "strength": 0.55,
+   "prompt": "no humans, scenery, detailed background, joseon dynasty korea, korean traditional architecture, giwa tiled roof, hideout under stone bridge, candles, crates, dark"
+  },
+  {
+   "id": "r_stream",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "init_file": "ref/bg_stream.jpg",
+   "strength": 0.55,
+   "prompt": "no humans, scenery, detailed background, joseon dynasty korea, korean traditional architecture, giwa tiled roof, cheonggyecheon stream, stone bridge, willow trees"
+  },
+  {
+   "id": "r_vault",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "init_file": "ref/bg_vault.jpg",
+   "strength": 0.55,
+   "prompt": "no humans, scenery, detailed background, joseon dynasty korea, korean traditional architecture, giwa tiled roof, underground secret vault, stone walls, chests of silver, torches"
+  },
+  {
+   "id": "r_palace",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "init_file": "ref/bg_palace.jpg",
+   "strength": 0.55,
+   "prompt": "no humans, scenery, detailed background, joseon dynasty korea, korean traditional architecture, giwa tiled roof, gyeongbokgung palace courtyard, dancheong, stone paved yard"
+  },
+  {
+   "id": "r_title",
+   "w": 768,
+   "h": 1344,
+   "seeds": [
+    1,
+    2
+   ],
+   "init_file": "ref/bg_title.jpg",
+   "strength": 0.55,
+   "prompt": "no humans, scenery, detailed background, joseon dynasty korea, korean traditional architecture, giwa tiled roof, hanyang at night, full moon, rooftops, mountain silhouettes"
   }
  ]
 }
