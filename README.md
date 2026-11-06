@@ -12,3 +12,8 @@
 - 워크플로 `엠버폴 그림 생성` (`.github/workflows/ember.yml`) — 트라이브 빌리지와 같은 무료 SDXL Turbo 방식, 디아2풍 다크 판타지 화풍
 - 프롬프트: `emberfall/prompts.json` (몬스터·보스·NPC·건물), 결과: `emberfall/out/`, 한눈에 보기: `emberfall/sheet*.jpg`
 - 원칙: 디아2의 자리·역할은 따르되 생김새는 새로 — 원작 고유 디자인 복사 금지. 앱에 넣기 전에 먼저 보여 주고 고르기
+
+## 부여전기 (buyeo-rpg) 그림
+- 워크플로 `부여전기 그림 생성` (`.github/workflows/buyeo.yml`) — 무료 SDXL Turbo(DreamShaper XL v2 Turbo) → rembg 배경 지움 → 128px 도트풍 가공(색 24개·1px 외곽선)
+- 프롬프트: `buyeo/prompts.json` (고구려·부여 고대풍), 원본: `buyeo/out/`, 가공본: `buyeo/game/`, 한눈에 보기: `buyeo/sheet.jpg` (원본 | 가공)
+- 원칙: 바람의나라 고유 그림 따라 하지 않기, 앱에 넣기 전에 먼저 보여 주고 고르기
