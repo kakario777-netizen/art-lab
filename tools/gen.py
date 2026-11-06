@@ -7,14 +7,18 @@ cfg = json.load(open("prompts.json", encoding="utf-8"))
 it = next(i for i in cfg["items"] if i["id"] == item_id)
 MODEL = os.environ.get("MODEL", "cagliostrolab/animagine-xl-4.0")
 torch.set_num_threads(os.cpu_count())
+flags = open("/proc/cpuinfo").read()
+# bf16 하드웨어 지원 CPU(AMD EPYC 등)는 bf16이 빠르고, 없는 CPU(구형 Intel)는 fp32가 훨씬 빠름
+DT = torch.bfloat16 if ("avx512_bf16" in flags or "amx_bf16" in flags) else torch.float32
+print("정밀도:", DT, flush=True)
 t0 = time.time()
 try:
-    pipe = StableDiffusionXLPipeline.from_pretrained(MODEL, torch_dtype=torch.bfloat16, use_safetensors=True)
+    pipe = StableDiffusionXLPipeline.from_pretrained(MODEL, torch_dtype=DT, use_safetensors=True)
 except Exception as e:
     print("diffusers 형식 실패, 단일 파일로:", e)
     from huggingface_hub import hf_hub_download, list_repo_files
     f = [x for x in list_repo_files(MODEL) if x.endswith(".safetensors")][0]
-    pipe = StableDiffusionXLPipeline.from_single_file(hf_hub_download(MODEL, f), torch_dtype=torch.bfloat16)
+    pipe = StableDiffusionXLPipeline.from_single_file(hf_hub_download(MODEL, f), torch_dtype=DT)
 pipe.scheduler = EulerAncestralDiscreteScheduler.from_config(pipe.scheduler.config)
 print(f"모델 로드 {time.time()-t0:.0f}초", flush=True)
 steps = int(os.environ.get("STEPS", "28"))
