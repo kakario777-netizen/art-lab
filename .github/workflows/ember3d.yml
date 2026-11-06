@@ -1,0 +1,52 @@
+name: 엠버폴 3D 시험 (그림 → 3D → 8방향 동작)
+
+on:
+  workflow_dispatch:
+    inputs:
+      ids: {description: "프롬프트 id (쉼표로)", default: "m_mummy,m_sandraider"}
+      model: {description: "그림 모델", default: "Lykon/dreamshaper-xl-v2-turbo"}
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        id: ${{ fromJson(format('["{0}"]', join(fromJson(format('["{0}"]', inputs.ids)), '","'))) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: 디스크 비우기
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+      - uses: actions/cache/restore@v4
+        with: {path: ~/hfcache, key: "model-${{ replace(inputs.model, '/', '-') }}"}
+      - name: 설치
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq libegl1 libegl-mesa0 libgl1-mesa-dri libgles2 > /dev/null
+          pip install --quiet torch torchvision --index-url https://download.pytorch.org/whl/cpu
+          pip install --quiet diffusers transformers accelerate safetensors pillow "rembg[cpu]" omegaconf einops trimesh imageio xatlas moderngl huggingface_hub scikit-image
+          git clone --depth 1 https://github.com/VAST-AI-Research/TripoSR
+          pip install --quiet git+https://github.com/tatsy/torchmcubes.git || echo "torchmcubes 빌드 실패"
+      - name: 3D 시험 ${{ matrix.id }}
+        env: {MODEL: "${{ inputs.model }}", HF_HOME: /home/runner/hfcache, PYTHONPATH: TripoSR}
+        run: python tools/ember3d.py ${{ matrix.id }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: "e3d-${{ matrix.id }}", path: "emberfall/3dtest/"}
+  collect:
+    needs: test
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {path: dl, pattern: "e3d-*", merge-multiple: true}
+      - name: 저장소에 올리기 (메쉬 원본은 빼고)
+        run: |
+          mkdir -p emberfall/3dtest && cp -r dl/* emberfall/3dtest/ 2>/dev/null; find emberfall/3dtest -name "*.obj" -delete; find emberfall/3dtest -type d -name tsr -exec rm -rf {} + ; true
+          git config user.name "art-bot"; git config user.email "art-bot@users.noreply.github.com"
+          git add emberfall/3dtest && git commit -m "엠버폴 3D 시험 결과" || exit 0
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
