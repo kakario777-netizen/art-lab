@@ -36,7 +36,7 @@
    "seeds": [
     1
    ],
-   "init_search": "hanok courtyard Korea",
+   "init_search": "Korea 1900s house courtyard photograph",
    "strength": 0.72,
    "prompt": "no humans, scenery, korean traditional wedding ceremony table in hanok courtyard, wedding table with red and blue cloth, candles, folding screen, flower petals, spring, warm sunlight, joseon dynasty korea, korean traditional hanok, curved giwa tiled roof, wooden beams, hanji paper doors, earthen walls"
   },
@@ -56,7 +56,7 @@
    "seeds": [
     1
    ],
-   "init_search": "hanok house yard",
+   "init_search": "Korean traditional house 1900s photograph",
    "strength": 0.72,
    "prompt": "no humans, scenery, cozy korean hanok house courtyard, wooden maru porch, jangdokdae earthen jars, persimmon tree, warm afternoon light, peaceful, joseon dynasty korea, korean traditional hanok, curved giwa tiled roof, wooden beams, hanji paper doors, earthen walls"
   },

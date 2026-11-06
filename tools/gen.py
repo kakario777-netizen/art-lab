@@ -26,7 +26,7 @@ def commons_photo(query):
     """위키미디어 공용에서 검색해 첫 사진을 받음"""
     ua = {"User-Agent": "art-lab-test/1.0 (github actions; game background test)"}
     q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": "filetype:bitmap " + query,
-                                "gsrnamespace": 6, "gsrlimit": 10, "prop": "imageinfo", "iiprop": "url|size",
+                                "gsrnamespace": 6, "gsrlimit": 50, "prop": "imageinfo", "iiprop": "url|size|extmetadata",
                                 "iiurlwidth": 1200, "format": "json"})
     for attempt in range(4):
         try:
@@ -36,9 +36,12 @@ def commons_photo(query):
             for p in pages:
                 ii = p.get("imageinfo", [{}])[0]
                 url = ii.get("thumburl") or ii.get("url")
-                if not url or ii.get("width", 0) < 800:
+                lic = ii.get("extmetadata", {}).get("LicenseShortName", {}).get("value", "")
+                # 저작권 걱정 없는 사진만: 퍼블릭 도메인 / CC0
+                if not url or ii.get("width", 0) < 800 or not any(k in lic.lower() for k in ("public domain", "cc0", "pd")):
                     continue
-                print("밑그림:", p["title"], url, flush=True)
+                print("밑그림:", p["title"], lic, url, flush=True)
+                open(f"out/{item_id}_s{seed}_base_source.txt", "w").write(f"{p['title']}\n{lic}\n{url}\n")
                 raw = urllib.request.urlopen(urllib.request.Request(url, headers=ua), timeout=120).read()
                 return Image.open(io.BytesIO(raw)).convert("RGB")
         except Exception as e:
