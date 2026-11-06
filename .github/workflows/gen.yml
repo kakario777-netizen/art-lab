@@ -6,6 +6,7 @@ on:
       ids:   {description: "만들 그림 id (쉼표로)", default: "wedding,wedding_base,family,family_base,hero_ip"}
       seeds: {description: "시드 (prompts.json에 seeds가 없는 그림만 사용)", default: "1"}
       steps: {description: "단계 수", default: "28"}
+      only_seeds: {description: "비우면 그림별 seeds, 값이 있으면 모든 그림에 이 시드만 (예: 1)", default: ""}
 
 permissions:
   contents: write
@@ -27,7 +28,8 @@ jobs:
           cfg = {i["id"]: i for i in json.load(open("prompts.json", encoding="utf-8"))["items"]}
           ids = [x.strip() for x in "${{ inputs.ids }}".split(",")]
           dflt = [x.strip() for x in "${{ inputs.seeds }}".split(",")]
-          inc = [{"id": i, "seed": str(s)} for i in ids for s in cfg[i].get("seeds", dflt)]
+          only = [x.strip() for x in "${{ inputs.only_seeds }}".split(",") if x.strip()]
+          inc = [{"id": i, "seed": str(s)} for i in ids for s in (only or cfg[i].get("seeds", dflt))]
           print("matrix=" + json.dumps({"include": inc}))
           PY
 
