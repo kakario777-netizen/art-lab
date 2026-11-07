@@ -11,7 +11,9 @@ def cut(img):
     global _S
     _S = _S or new_session("isnet-general-use")
     m = np.asarray(remove(img, session=_S, only_mask=True), dtype=np.float32)
-    a = np.clip((m - 60) / (190 - 60), 0, 1)              # 흐린 부분 → 거의 불투명/투명으로
+    # 배경과 색이 비슷하면(회색 바위 등) 마스크 전체가 흐리게 나옴 → 그림마다 기준을 맞춤
+    hi = float(np.percentile(m[m > 15], 90)) if (m > 15).sum() > 100 else 255.0
+    a = np.clip((m - 0.2 * hi) / (0.45 * hi), 0, 1)
     solid = a > 0.5
     lab, n = ndimage.label(solid)                          # 가장 큰 덩어리 + 큰 덩어리만 남김
     if n:
