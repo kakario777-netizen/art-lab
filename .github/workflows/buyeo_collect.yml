@@ -23,4 +23,4 @@ jobs:
           pip install --quiet pillow && python tools/sheet_buyeo.py
           git config user.name "art-bot"; git config user.email "art-bot@users.noreply.github.com"
           git add buyeo && git commit -m "부여전기 그림 결과 모음 (run ${{ inputs.run_id }})" || exit 0
-          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done
