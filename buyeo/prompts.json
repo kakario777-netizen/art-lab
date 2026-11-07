@@ -6,7 +6,11 @@
   "p": "bust portrait of a single character for an rpg dialogue window, head and shoulders, three-quarter view facing slightly left, korean manhwa game illustration style, clean lineart, soft cel shading, ancient Goguryeo Korea three kingdoms period clothing, jeogori jacket closed to the left with belt, plain flat solid dark teal background, no white background",
   "o": "single isolated game map object, classic korean 2d mmorpg top-down three-quarter view seen from slightly above and front, hand-painted pixel art game asset style, clean silhouette, dark outline, soft shading lit from top left, ancient Goguryeo Korea, natural muted colors, plain white background, no ground, no shadow",
   "t": "epic fantasy game title screen key art, ancient Goguryeo Korea three kingdoms period, cinematic wide landscape, painterly korean manhwa illustration style, rich warm sunset light, no text, no letters, no logo",
-  "m": "old hand-drawn fantasy world map on aged hanji paper, ink brush lines, simple mountains rivers forests and small walled towns, muted sepia ink with light color wash, top-down map, no text, no letters, no labels"
+  "m": "old hand-drawn fantasy world map on aged hanji paper, ink brush lines, simple mountains rivers forests and small walled towns, muted sepia ink with light color wash, top-down map, no text, no letters, no labels",
+  "b": "single isolated building for a classic korean 2d mmorpg town map, top-down three-quarter view from front and slightly above, whole building visible with roof and front wall, hand-painted pixel art game asset style, dark outline, soft light from top left, ancient Goguryeo Korea architecture, plain white background, no ground, no people",
+  "x": "seamless tileable texture, flat top-down orthographic, evenly lit, no shadows, no objects, game texture, hand-painted",
+  "u": "game user interface ornament asset, ancient Goguryeo Korean style, carved dark wood with bronze fittings and subtle dancheong colors, high quality detailed, centered, plain white background",
+  "e": "glowing magic visual effect, game vfx sprite, centered, bright glow on pure black background"
  },
  "_negative": "text, letters, watermark, signature, logo, frame, border, multiple objects, collage, grid, scenery, background, hands, person, photo, photorealistic, blurry, lowres, japanese, chinese dragon, katana, kimono, shadow on floor, pedestal",
  "items": [
@@ -537,6 +541,1142 @@
     192,
     156
    ]
+  },
+  {
+   "id": "arch",
+   "name": "arch",
+   "kind": "o",
+   "prompt": "wooden ceremonial gate arch with red pillars and tiled roof",
+   "fit": [
+    288,
+    180
+   ],
+   "w": 960,
+   "h": 576
+  },
+  {
+   "id": "banner_b",
+   "name": "banner_b",
+   "kind": "o",
+   "prompt": "tall wooden pole with long vertical blue cloth banner",
+   "fit": [
+    60,
+    216
+   ],
+   "w": 384,
+   "h": 1344
+  },
+  {
+   "id": "banner_r",
+   "name": "banner_r",
+   "kind": "o",
+   "prompt": "tall wooden pole with long vertical red cloth banner",
+   "fit": [
+    60,
+    216
+   ],
+   "w": 384,
+   "h": 1344
+  },
+  {
+   "id": "chicken",
+   "name": "chicken",
+   "kind": "o",
+   "prompt": "small brown hen chicken",
+   "fit": [
+    60,
+    60
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "cornertower",
+   "name": "cornertower",
+   "kind": "o",
+   "prompt": "square stone castle corner watchtower with wooden pavilion roof on top",
+   "fit": [
+    192,
+    312
+   ],
+   "w": 576,
+   "h": 960
+  },
+  {
+   "id": "gatetower",
+   "name": "gatetower",
+   "kind": "o",
+   "prompt": "ancient korean castle gate with stone arch and two story wooden gate pavilion with tiled roof on top, wide",
+   "fit": [
+    576,
+    444
+   ],
+   "w": 896,
+   "h": 704
+  },
+  {
+   "id": "gatetower3",
+   "name": "gatetower3",
+   "kind": "o",
+   "prompt": "grand ancient korean fortress gate with three stone arches and a large wooden gate pavilion with tiled roof, wide",
+   "fit": [
+    672,
+    456
+   ],
+   "w": 960,
+   "h": 640
+  },
+  {
+   "id": "laundry",
+   "name": "laundry",
+   "kind": "o",
+   "prompt": "wooden poles with a rope and white hanging laundry clothes",
+   "fit": [
+    192,
+    144
+   ],
+   "w": 896,
+   "h": 640
+  },
+  {
+   "id": "lily",
+   "name": "lily",
+   "kind": "o",
+   "prompt": "pink lotus flower with round green lily pads on water",
+   "fit": [
+    96,
+    96
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "log",
+   "name": "log",
+   "kind": "o",
+   "prompt": "fallen tree log lying horizontally",
+   "fit": [
+    192,
+    84
+   ],
+   "w": 1152,
+   "h": 512
+  },
+  {
+   "id": "mushroom",
+   "name": "mushroom",
+   "kind": "o",
+   "prompt": "cluster of brown forest mushrooms",
+   "fit": [
+    96,
+    96
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "pagoda",
+   "name": "pagoda",
+   "kind": "o",
+   "prompt": "small ancient stone pagoda with three tiers",
+   "fit": [
+    84,
+    156
+   ],
+   "w": 576,
+   "h": 1024
+  },
+  {
+   "id": "palacegate",
+   "name": "palacegate",
+   "kind": "o",
+   "prompt": "grand red palace main gate with three doors, tiled roof with upturned eaves, stone steps, wide",
+   "fit": [
+    768,
+    504
+   ],
+   "w": 960,
+   "h": 640
+  },
+  {
+   "id": "pavilion",
+   "name": "pavilion",
+   "kind": "o",
+   "prompt": "open wooden pavilion jeongja with red pillars and tiled roof on a stone base",
+   "fit": [
+    288,
+    300
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "reeds",
+   "name": "reeds",
+   "kind": "o",
+   "prompt": "cluster of tall river reeds",
+   "fit": [
+    96,
+    132
+   ],
+   "w": 640,
+   "h": 896
+  },
+  {
+   "id": "ruin",
+   "name": "ruin",
+   "kind": "o",
+   "prompt": "crumbled ancient stone ruins with broken pillars and moss",
+   "fit": [
+    192,
+    156
+   ],
+   "w": 832,
+   "h": 704
+  },
+  {
+   "id": "sidetower",
+   "name": "sidetower",
+   "kind": "o",
+   "prompt": "narrow stone castle wall watchtower with small wooden roof",
+   "fit": [
+    144,
+    300
+   ],
+   "w": 512,
+   "h": 1088
+  },
+  {
+   "id": "sign",
+   "name": "sign",
+   "kind": "o",
+   "prompt": "wooden signpost with a blank board",
+   "fit": [
+    96,
+    132
+   ],
+   "w": 640,
+   "h": 896
+  },
+  {
+   "id": "stall_b",
+   "name": "stall_b",
+   "kind": "o",
+   "prompt": "small market stall with wooden frame and blue cloth awning and goods",
+   "fit": [
+    192,
+    180
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "stall_g",
+   "name": "stall_g",
+   "kind": "o",
+   "prompt": "small market stall with wooden frame and green cloth awning and baskets of vegetables",
+   "fit": [
+    192,
+    180
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "stones",
+   "name": "stones",
+   "kind": "o",
+   "prompt": "small pile of grey stones",
+   "fit": [
+    96,
+    96
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "torch",
+   "name": "torch",
+   "kind": "o",
+   "prompt": "standing wooden torch post with burning fire on top",
+   "fit": [
+    48,
+    144
+   ],
+   "w": 448,
+   "h": 1344
+  },
+  {
+   "id": "makgeolli",
+   "name": "막걸리",
+   "kind": "i",
+   "prompt": "traditional korean earthenware makgeolli rice wine jug with a small gourd cup, milky white wine",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "coins",
+   "name": "엽전 더미",
+   "kind": "i",
+   "prompt": "small pile of round ancient bronze coins with square holes",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "cloud0",
+   "name": "구름",
+   "kind": "o",
+   "prompt": "large soft white fluffy cloud seen from above, soft edges, slightly transparent look",
+   "fit": [
+    480,
+    240
+   ],
+   "w": 1088,
+   "h": 512
+  },
+  {
+   "id": "cloud1",
+   "name": "구름",
+   "kind": "o",
+   "prompt": "long thin wispy white cloud, soft edges, slightly transparent look",
+   "fit": [
+    480,
+    240
+   ],
+   "w": 1088,
+   "h": 512
+  },
+  {
+   "id": "cloud2",
+   "name": "구름",
+   "kind": "o",
+   "prompt": "small round puffy white cloud, soft edges, slightly transparent look",
+   "fit": [
+    480,
+    240
+   ],
+   "w": 1088,
+   "h": 512
+  },
+  {
+   "id": "t_cave",
+   "name": "동굴 입구",
+   "kind": "o",
+   "prompt": "dark cave entrance in a rocky cliff face, mysterious dungeon entrance",
+   "fit": [
+    96,
+    96
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "t_fence",
+   "name": "울타리",
+   "kind": "o",
+   "prompt": "short woven wooden twig fence section, horizontal",
+   "fit": [
+    96,
+    96
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "t_bridge_h",
+   "name": "다리(가로)",
+   "kind": "o",
+   "prompt": "wooden plank bridge section seen from above, planks running vertically, horizontal bridge",
+   "fit": [
+    96,
+    96
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "t_bridge_v",
+   "name": "다리(세로)",
+   "kind": "o",
+   "prompt": "wooden plank bridge section seen from above, planks running horizontally, vertical bridge",
+   "fit": [
+    96,
+    96
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "t_flower_0",
+   "name": "꽃",
+   "kind": "o",
+   "prompt": "small clump of red and yellow wild flowers",
+   "fit": [
+    96,
+    96
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "t_flower_1",
+   "name": "꽃",
+   "kind": "o",
+   "prompt": "small clump of purple and white wild flowers",
+   "fit": [
+    96,
+    96
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "t_flower_2",
+   "name": "꽃",
+   "kind": "o",
+   "prompt": "small clump of pink azalea flowers",
+   "fit": [
+    96,
+    96
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "t_tallgrass_0",
+   "name": "긴 풀",
+   "kind": "o",
+   "prompt": "clump of tall green grass",
+   "fit": [
+    96,
+    96
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "t_tallgrass_1",
+   "name": "긴 풀",
+   "kind": "o",
+   "prompt": "clump of tall wild grass with seed heads",
+   "fit": [
+    96,
+    96
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "t_rock_0",
+   "name": "바위",
+   "kind": "o",
+   "prompt": "small grey rock",
+   "fit": [
+    96,
+    96
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "t_rock_1",
+   "name": "바위",
+   "kind": "o",
+   "prompt": "two small mossy rocks",
+   "fit": [
+    96,
+    96
+   ],
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "b_armory",
+   "name": "armory",
+   "kind": "b",
+   "prompt": "ancient korean armory building with tiled roof, weapon racks by the door",
+   "fit": [
+    480,
+    336
+   ],
+   "w": 896,
+   "h": 640
+  },
+  {
+   "id": "b_ch3_0",
+   "name": "ch3",
+   "kind": "b",
+   "prompt": "small three-bay thatched roof korean cottage choga with mud walls and wooden doors",
+   "fit": [
+    288,
+    336
+   ],
+   "w": 704,
+   "h": 832
+  },
+  {
+   "id": "b_ch3_1",
+   "name": "ch3",
+   "kind": "b",
+   "prompt": "small three-bay thatched roof korean cottage choga with mud walls and wooden doors, with clay jars by the wall",
+   "fit": [
+    288,
+    336
+   ],
+   "w": 704,
+   "h": 832
+  },
+  {
+   "id": "b_ch3_2",
+   "name": "ch3",
+   "kind": "b",
+   "prompt": "small three-bay thatched roof korean cottage choga with mud walls and wooden doors, with stacked firewood beside it",
+   "fit": [
+    288,
+    336
+   ],
+   "w": 704,
+   "h": 832
+  },
+  {
+   "id": "b_ch3_3",
+   "name": "ch3",
+   "kind": "b",
+   "prompt": "small three-bay thatched roof korean cottage choga with mud walls and wooden doors, with red peppers drying on the roof",
+   "fit": [
+    288,
+    336
+   ],
+   "w": 704,
+   "h": 832
+  },
+  {
+   "id": "b_ch4_0",
+   "name": "ch4",
+   "kind": "b",
+   "prompt": "four-bay thatched roof korean farmhouse choga with mud walls, wooden porch",
+   "fit": [
+    384,
+    336
+   ],
+   "w": 832,
+   "h": 704
+  },
+  {
+   "id": "b_ch4_1",
+   "name": "ch4",
+   "kind": "b",
+   "prompt": "four-bay thatched roof korean farmhouse choga with mud walls, wooden porch, with clay jars by the wall",
+   "fit": [
+    384,
+    336
+   ],
+   "w": 832,
+   "h": 704
+  },
+  {
+   "id": "b_ch4_2",
+   "name": "ch4",
+   "kind": "b",
+   "prompt": "four-bay thatched roof korean farmhouse choga with mud walls, wooden porch, with stacked firewood beside it",
+   "fit": [
+    384,
+    336
+   ],
+   "w": 832,
+   "h": 704
+  },
+  {
+   "id": "b_ch4_3",
+   "name": "ch4",
+   "kind": "b",
+   "prompt": "four-bay thatched roof korean farmhouse choga with mud walls, wooden porch, with red peppers drying on the roof",
+   "fit": [
+    384,
+    336
+   ],
+   "w": 832,
+   "h": 704
+  },
+  {
+   "id": "b_ch5_0",
+   "name": "ch5",
+   "kind": "b",
+   "prompt": "long five-bay thatched roof korean farmhouse choga with mud walls, wooden porch and doors",
+   "fit": [
+    480,
+    336
+   ],
+   "w": 896,
+   "h": 640
+  },
+  {
+   "id": "b_ch5_1",
+   "name": "ch5",
+   "kind": "b",
+   "prompt": "long five-bay thatched roof korean farmhouse choga with mud walls, wooden porch and doors, with clay jars by the wall",
+   "fit": [
+    480,
+    336
+   ],
+   "w": 896,
+   "h": 640
+  },
+  {
+   "id": "b_ch5_2",
+   "name": "ch5",
+   "kind": "b",
+   "prompt": "long five-bay thatched roof korean farmhouse choga with mud walls, wooden porch and doors, with stacked firewood beside it",
+   "fit": [
+    480,
+    336
+   ],
+   "w": 896,
+   "h": 640
+  },
+  {
+   "id": "b_ch5_3",
+   "name": "ch5",
+   "kind": "b",
+   "prompt": "long five-bay thatched roof korean farmhouse choga with mud walls, wooden porch and doors, with red peppers drying on the roof",
+   "fit": [
+    480,
+    336
+   ],
+   "w": 896,
+   "h": 640
+  },
+  {
+   "id": "b_guild_mage",
+   "name": "guild_mage",
+   "kind": "b",
+   "prompt": "ancient korean sorcerers hall with tiled roof, orange banners and talisman decorations",
+   "fit": [
+    480,
+    336
+   ],
+   "w": 896,
+   "h": 640
+  },
+  {
+   "id": "b_guild_priest",
+   "name": "guild_priest",
+   "kind": "b",
+   "prompt": "ancient korean taoist temple hall with tiled roof, white and green banners, incense burner",
+   "fit": [
+    480,
+    336
+   ],
+   "w": 896,
+   "h": 640
+  },
+  {
+   "id": "b_guild_rogue",
+   "name": "guild_rogue",
+   "kind": "b",
+   "prompt": "dark mysterious ancient korean hall with black tiled roof and indigo curtains",
+   "fit": [
+    480,
+    336
+   ],
+   "w": 896,
+   "h": 640
+  },
+  {
+   "id": "b_guild_warrior",
+   "name": "guild_warrior",
+   "kind": "b",
+   "prompt": "ancient korean martial training hall with tiled roof, red banners and weapon racks",
+   "fit": [
+    480,
+    336
+   ],
+   "w": 896,
+   "h": 640
+  },
+  {
+   "id": "b_gw4",
+   "name": "gw4",
+   "kind": "b",
+   "prompt": "four-bay ancient korean tiled roof house giwa with white walls and wooden pillars",
+   "fit": [
+    384,
+    336
+   ],
+   "w": 832,
+   "h": 704
+  },
+  {
+   "id": "b_gw5",
+   "name": "gw5",
+   "kind": "b",
+   "prompt": "large five-bay ancient korean tiled roof house giwa with white walls and wooden pillars",
+   "fit": [
+    480,
+    336
+   ],
+   "w": 896,
+   "h": 640
+  },
+  {
+   "id": "b_hallbig",
+   "name": "hallbig",
+   "kind": "b",
+   "prompt": "large ancient korean government office hall with grand tiled roof and red pillars, stone platform",
+   "fit": [
+    768,
+    336
+   ],
+   "w": 1152,
+   "h": 512
+  },
+  {
+   "id": "b_hallside",
+   "name": "hallside",
+   "kind": "b",
+   "prompt": "ancient korean side office hall with tiled roof and red pillars",
+   "fit": [
+    384,
+    336
+   ],
+   "w": 832,
+   "h": 704
+  },
+  {
+   "id": "b_haunted",
+   "name": "haunted",
+   "kind": "b",
+   "prompt": "abandoned haunted ancient korean house with broken tiled roof, torn paper doors, creepy",
+   "fit": [
+    480,
+    336
+   ],
+   "w": 896,
+   "h": 640
+  },
+  {
+   "id": "b_inn",
+   "name": "inn",
+   "kind": "b",
+   "prompt": "ancient korean roadside inn jumak with thatched roof, wide wooden porch, hanging lantern",
+   "fit": [
+    576,
+    336
+   ],
+   "w": 1024,
+   "h": 576
+  },
+  {
+   "id": "b_jail",
+   "name": "jail",
+   "kind": "b",
+   "prompt": "ancient korean jail building with tiled roof and wooden bar cell doors",
+   "fit": [
+    576,
+    336
+   ],
+   "w": 1024,
+   "h": 576
+  },
+  {
+   "id": "b_palacebig",
+   "name": "palacebig",
+   "kind": "b",
+   "prompt": "grand ancient Goguryeo royal palace main hall on a high stone platform, huge double tiled roof with upturned eaves, red pillars, very wide",
+   "fit": [
+    1920,
+    528
+   ],
+   "w": 1344,
+   "h": 384
+  },
+  {
+   "id": "b_palwing",
+   "name": "palwing",
+   "kind": "b",
+   "prompt": "long ancient korean palace corridor wing building with tiled roof and red pillars, wide",
+   "fit": [
+    1056,
+    336
+   ],
+   "w": 1344,
+   "h": 448
+  },
+  {
+   "id": "b_palwing2",
+   "name": "palwing2",
+   "kind": "b",
+   "prompt": "long ancient korean palace side wing building with tiled roof and red pillars, wide",
+   "fit": [
+    1152,
+    336
+   ],
+   "w": 1344,
+   "h": 384
+  },
+  {
+   "id": "b_shrine",
+   "name": "shrine",
+   "kind": "b",
+   "prompt": "small ancient korean village shrine seonghwangdang with tiled roof, colorful cloth strips and rope",
+   "fit": [
+    288,
+    336
+   ],
+   "w": 704,
+   "h": 832
+  },
+  {
+   "id": "b_smith",
+   "name": "smith",
+   "kind": "b",
+   "prompt": "ancient korean blacksmith workshop with tiled roof, glowing forge and anvil at the front",
+   "fit": [
+    480,
+    336
+   ],
+   "w": 896,
+   "h": 640
+  },
+  {
+   "id": "b_storage",
+   "name": "storage",
+   "kind": "b",
+   "prompt": "ancient korean storehouse with tiled roof and heavy wooden doors, raised floor",
+   "fit": [
+    384,
+    336
+   ],
+   "w": 832,
+   "h": 704
+  },
+  {
+   "id": "b_tailor",
+   "name": "tailor",
+   "kind": "b",
+   "prompt": "ancient korean cloth shop with tiled roof, colorful fabrics hanging at the front",
+   "fit": [
+    384,
+    336
+   ],
+   "w": 832,
+   "h": 704
+  },
+  {
+   "id": "b_theater",
+   "name": "theater",
+   "kind": "b",
+   "prompt": "ancient korean open performance hall with large tiled roof and open front stage",
+   "fit": [
+    576,
+    336
+   ],
+   "w": 1024,
+   "h": 576
+  },
+  {
+   "id": "tx_castle",
+   "name": "tx_castle",
+   "kind": "x",
+   "prompt": "ancient korean fortress wall of large fitted grey granite blocks",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "tx_stonewall",
+   "name": "tx_stonewall",
+   "kind": "x",
+   "prompt": "traditional korean low stone wall doldam of rounded stones and mud",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "tx_cliff",
+   "name": "tx_cliff",
+   "kind": "x",
+   "prompt": "rough brown and grey rocky cliff face",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "tx_grass",
+   "name": "tx_grass",
+   "kind": "x",
+   "prompt": "lush green grass meadow",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "tx_road",
+   "name": "tx_road",
+   "kind": "x",
+   "prompt": "packed brown dirt road with small pebbles",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "tx_pave",
+   "name": "tx_pave",
+   "kind": "x",
+   "prompt": "ancient grey stone paving slabs",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "tx_yard",
+   "name": "tx_yard",
+   "kind": "x",
+   "prompt": "swept pale beige earthen courtyard ground",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "tx_sand",
+   "name": "tx_sand",
+   "kind": "x",
+   "prompt": "fine pale yellow sand",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "tx_field",
+   "name": "tx_field",
+   "kind": "x",
+   "prompt": "tilled brown farm soil rows",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "tx_paddy",
+   "name": "tx_paddy",
+   "kind": "x",
+   "prompt": "flooded green rice paddy with young rice",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "tx_water",
+   "name": "tx_water",
+   "kind": "x",
+   "prompt": "clear blue river water surface with gentle ripples",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ui_frame",
+   "name": "창 테두리 모서리",
+   "kind": "u",
+   "prompt": "ornate carved wooden window frame corner piece, L shape",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ui_edge",
+   "name": "창 테두리 가장자리",
+   "kind": "u",
+   "prompt": "long horizontal carved wooden frame border strip with bronze studs",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ui_header",
+   "name": "창 머리 장식",
+   "kind": "u",
+   "prompt": "horizontal ornamental header bar of carved wood with dancheong cloud pattern",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ui_hanji",
+   "name": "한지 바탕",
+   "kind": "u",
+   "prompt": "sheet of aged korean hanji paper texture, flat, beige",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ui_tab",
+   "name": "탭",
+   "kind": "u",
+   "prompt": "rectangular wooden tab button with carved border, blank center",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ui_tab_on",
+   "name": "탭(선택)",
+   "kind": "u",
+   "prompt": "rectangular red lacquered tab button with gold carved border, blank center",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ui_btn",
+   "name": "버튼",
+   "kind": "u",
+   "prompt": "rectangular wooden button with bronze corners, blank center",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ui_round",
+   "name": "둥근 버튼",
+   "kind": "u",
+   "prompt": "round bronze medallion button with carved ring, blank center",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ui_bar",
+   "name": "막대 틀",
+   "kind": "u",
+   "prompt": "long thin horizontal bronze gauge frame for health bar, empty inside",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ic_act",
+   "name": "ic_act",
+   "kind": "s",
+   "prompt": "crossed sword and fist",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ic_run",
+   "name": "ic_run",
+   "kind": "s",
+   "prompt": "running straw sandal with motion lines",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ic_more",
+   "name": "ic_more",
+   "kind": "s",
+   "prompt": "three horizontal lines menu symbol",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ic_stat",
+   "name": "ic_stat",
+   "kind": "s",
+   "prompt": "scroll with a person silhouette",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ic_gear",
+   "name": "ic_gear",
+   "kind": "s",
+   "prompt": "leather bag and armor",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ic_map",
+   "name": "ic_map",
+   "kind": "s",
+   "prompt": "rolled old map",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ic_set",
+   "name": "ic_set",
+   "kind": "s",
+   "prompt": "bronze cogwheel",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "ic_coin",
+   "name": "ic_coin",
+   "kind": "s",
+   "prompt": "single ancient bronze coin with square hole",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "job_warrior",
+   "name": "job_warrior",
+   "kind": "s",
+   "prompt": "crossed swords emblem red",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "job_rogue",
+   "name": "job_rogue",
+   "kind": "s",
+   "prompt": "dagger and crescent moon emblem indigo",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "job_mage",
+   "name": "job_mage",
+   "kind": "s",
+   "prompt": "flame talisman emblem orange",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "job_priest",
+   "name": "job_priest",
+   "kind": "s",
+   "prompt": "pine branch and cloud emblem green",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "fx_ember",
+   "name": "fx_ember",
+   "kind": "e",
+   "prompt": "small fireball with flame trail",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "fx_ice",
+   "name": "fx_ice",
+   "kind": "e",
+   "prompt": "sharp ice crystal shard",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "fx_slash",
+   "name": "fx_slash",
+   "kind": "e",
+   "prompt": "white sword slash arc",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "fx_heal",
+   "name": "fx_heal",
+   "kind": "e",
+   "prompt": "rising green healing sparkles and leaves",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "fx_level",
+   "name": "fx_level",
+   "kind": "e",
+   "prompt": "golden light pillar with sparkles",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "fx_portal",
+   "name": "fx_portal",
+   "kind": "e",
+   "prompt": "swirling blue magic portal light circle",
+   "w": 768,
+   "h": 768
   }
  ]
 }

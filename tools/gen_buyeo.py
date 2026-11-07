@@ -21,6 +21,20 @@ img = pipe(prompt=it["prompt"] + ", " + cfg["_style"][kind], negative_prompt=cfg
            generator=torch.Generator().manual_seed(seed)).images[0]
 os.makedirs("buyeo/out", exist_ok=True); os.makedirs("buyeo/game", exist_ok=True)
 img.convert("RGB").save(f"buyeo/out/{item_id}_s{seed}_raw.jpg", quality=85)
+if kind == "x":   # 이어 붙는 질감: 가장자리 섞어 이음새 없애기
+    im = img.convert("RGB").resize((512, 512), Image.LANCZOS); a = np.asarray(im).astype(float)
+    r = np.roll(np.roll(a, 256, 0), 256, 1); yy, xx = np.mgrid[0:512, 0:512]
+    w = (np.minimum(np.minimum(xx, 511 - xx), np.minimum(yy, 511 - yy)) / 256.0).clip(0, 1)[..., None]
+    out = a * w + r * (1 - w)
+    Image.fromarray(out.astype(np.uint8)).save(f"buyeo/game/{item_id}_s{seed}.png"); im.save(f"buyeo/out/{item_id}_s{seed}.png")
+    print(f"완료 {time.time()-t0:.0f}초"); sys.exit(0)
+if kind == "e":   # 빛 효과: 검은 배경 → 투명
+    a = np.asarray(img.convert("RGB").resize((256, 256), Image.LANCZOS)).astype(float)
+    al = a.max(2); out = np.dstack([a / np.maximum(al, 1)[..., None] * 255, al]).clip(0, 255).astype(np.uint8)
+    Image.fromarray(out, "RGBA").save(f"buyeo/game/{item_id}_s{seed}.png"); Image.fromarray(out, "RGBA").save(f"buyeo/out/{item_id}_s{seed}.png")
+    print(f"완료 {time.time()-t0:.0f}초"); sys.exit(0)
+if kind == "u" and "hanji" in item_id:
+    im = img.convert("RGB").resize((512, 512), Image.LANCZOS); im.save(f"buyeo/game/{item_id}_s{seed}.png"); im.save(f"buyeo/out/{item_id}_s{seed}.png"); sys.exit(0)
 if kind in ("t", "m"):   # 큰 그림: 배경 그대로, 크기만
     tw = 1280 if kind == "t" else 768
     im = img.convert("RGB").resize((tw, round(img.height * tw / img.width)), Image.LANCZOS)
@@ -48,7 +62,7 @@ if "fit" in it:   # 지도 물체: 예전 그림 크기(2배) 칸에 아래 가�
     print(f"완료 {time.time()-t0:.0f}초"); sys.exit(0)
 
 # ── 도트풍 가공: 112px 안에 맞춤 → 색 24개 → 알파 딱 자르기 → 1px 짙은 외곽선 → 128px 칸 가운데
-S, INNER, NCOL = (192, 184, 32) if kind == "p" else (128, 112, 24)   # 초상은 크게·색 많이
+S, INNER, NCOL = (192, 184, 32) if kind == "p" else ((384, 376, 64) if kind == "u" else (128, 112, 24))   # 초상은 크게·색 많이
 c = cut.copy(); c.thumbnail((INNER, INNER), Image.LANCZOS)
 a = np.asarray(c).copy()
 mask = a[..., 3] >= 128
