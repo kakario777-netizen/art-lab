@@ -23,11 +23,8 @@ for f in sorted(glob.glob("tribez/restyle/in/*.png")):
     img = pipe(prompt=prompt, negative_prompt=neg, image=bg.convert("RGB"), strength=st,
                num_inference_steps=max(8, int(round(4 / st))), guidance_scale=2.0,
                generator=torch.Generator().manual_seed(7)).images[0]
-    cut = remove(img, session=sess)
-    a = big.getchannel("A")                      # 원래 윤곽을 살짝 넓혀 써서 실루엣 유지
-    from PIL import ImageFilter
-    cut.putalpha(Image.composite(cut.getchannel("A"), a.filter(ImageFilter.MaxFilter(9)), a.filter(ImageFilter.MaxFilter(9))))
-    small = cut.resize(src.size, Image.LANCZOS)
+    small = img.convert("RGBA").resize(src.size, Image.LANCZOS)
+    small.putalpha(src.getchannel("A"))          # 윤곽은 원래 그림 그대로(반투명 없음)
     small.save(f"{out}/{os.path.basename(f)}")
     frames.append((src, small))
     print(os.path.basename(f), f"{time.time()-t0:.0f}s", flush=True)
