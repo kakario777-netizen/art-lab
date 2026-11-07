@@ -3,7 +3,10 @@
  "_style": {
   "i": "single game item icon, centered, slightly top-down three-quarter view, old korean pixel-art rpg inventory icon style, clean bold silhouette, thick dark outline, flat cel shading with few colors, ancient Goguryeo Korea, earthy muted palette of ochre, vermilion, ink black, jade green, plain white background",
   "s": "round skill icon emblem, single symbol centered inside a circular bronze medallion frame, old korean rpg skill button icon, bold simple shapes, thick dark outline, flat cel shading, ancient Goguryeo mural colors, plain white background",
-  "p": "bust portrait of a single character for an rpg dialogue window, head and shoulders, three-quarter view facing slightly left, korean manhwa game illustration style, clean lineart, soft cel shading, ancient Goguryeo Korea three kingdoms period clothing, jeogori jacket closed to the left with belt, plain flat solid dark teal background, no white background"
+  "p": "bust portrait of a single character for an rpg dialogue window, head and shoulders, three-quarter view facing slightly left, korean manhwa game illustration style, clean lineart, soft cel shading, ancient Goguryeo Korea three kingdoms period clothing, jeogori jacket closed to the left with belt, plain flat solid dark teal background, no white background",
+  "o": "single isolated game map object, classic korean 2d mmorpg top-down three-quarter view seen from slightly above and front, hand-painted pixel art game asset style, clean silhouette, dark outline, soft shading lit from top left, ancient Goguryeo Korea, natural muted colors, plain white background, no ground, no shadow",
+  "t": "epic fantasy game title screen key art, ancient Goguryeo Korea three kingdoms period, cinematic wide landscape, painterly korean manhwa illustration style, rich warm sunset light, no text, no letters, no logo",
+  "m": "old hand-drawn fantasy world map on aged hanji paper, ink brush lines, simple mountains rivers forests and small walled towns, muted sepia ink with light color wash, top-down map, no text, no letters, no labels"
  },
  "_negative": "text, letters, watermark, signature, logo, frame, border, multiple objects, collage, grid, scenery, background, hands, person, photo, photorealistic, blurry, lowres, japanese, chinese dragon, katana, kimono, shadow on floor, pedestal",
  "items": [
@@ -302,6 +305,238 @@
    "w": 768,
    "h": 768,
    "prompt": "kind old taoist sage with long white hair and white beard, white robe with green trim, holding a wooden staff, gentle smile"
+  },
+  {
+   "id": "title",
+   "name": "타이틀",
+   "kind": "t",
+   "w": 1024,
+   "h": 576,
+   "prompt": "young ancient korean warrior in red jeogori with a ring-pommel sword standing on a hill, looking at a great walled capital city with a palace on a plain, mountains, pine trees, flock of birds"
+  },
+  {
+   "id": "worldmap",
+   "name": "세계지도",
+   "kind": "m",
+   "w": 768,
+   "h": 768,
+   "prompt": "a small kingdom with a central walled capital, pine forest to the north, fields to the south, hills to the west, a road to the east leading to another walled town"
+  },
+  {
+   "id": "pine",
+   "name": "소나무",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "tall korean red pine tree with layered green needle clusters and reddish bark trunk",
+   "fit": [
+    96,
+    192
+   ]
+  },
+  {
+   "id": "pine2",
+   "name": "소나무2",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "slender twisted korean pine tree with sparse needle clusters",
+   "fit": [
+    96,
+    192
+   ]
+  },
+  {
+   "id": "oak",
+   "name": "참나무",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "leafy round deciduous oak tree with thick trunk",
+   "fit": [
+    108,
+    180
+   ]
+  },
+  {
+   "id": "bigtree",
+   "name": "큰 나무",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "huge ancient zelkova village guardian tree with massive trunk and wide round canopy, colorful cloth strips tied on lower branches",
+   "fit": [
+    336,
+    372
+   ]
+  },
+  {
+   "id": "bush",
+   "name": "덤불",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "small round green leafy bush",
+   "fit": [
+    96,
+    96
+   ]
+  },
+  {
+   "id": "deadtree",
+   "name": "마른 나무",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "dead leafless gnarled tree with bare branches",
+   "fit": [
+    96,
+    180
+   ]
+  },
+  {
+   "id": "stump",
+   "name": "그루터기",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "cut tree stump with visible rings and roots",
+   "fit": [
+    96,
+    84
+   ]
+  },
+  {
+   "id": "well",
+   "name": "우물",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "round stone village well with wooden frame, rope and wooden bucket",
+   "fit": [
+    96,
+    144
+   ]
+  },
+  {
+   "id": "jars",
+   "name": "장독",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "group of three brown korean earthenware onggi storage jars with lids",
+   "fit": [
+    108,
+    120
+   ]
+  },
+  {
+   "id": "haystack",
+   "name": "짚단",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "stack of golden rice straw bundles",
+   "fit": [
+    96,
+    132
+   ]
+  },
+  {
+   "id": "firewood",
+   "name": "장작",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "neat pile of split firewood logs",
+   "fit": [
+    96,
+    84
+   ]
+  },
+  {
+   "id": "cart",
+   "name": "수레",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "simple wooden two-wheeled hand cart",
+   "fit": [
+    144,
+    108
+   ]
+  },
+  {
+   "id": "jangseung",
+   "name": "장승",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "korean wooden village guardian totem pole jangseung with carved fierce face",
+   "fit": [
+    72,
+    192
+   ]
+  },
+  {
+   "id": "sotdae",
+   "name": "솟대",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "tall thin wooden pole with a small carved wooden bird on top, korean sotdae",
+   "fit": [
+    60,
+    216
+   ]
+  },
+  {
+   "id": "scarecrow",
+   "name": "허수아비",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "straw scarecrow wearing an old hat and ragged hemp clothes on a wooden pole",
+   "fit": [
+    96,
+    168
+   ]
+  },
+  {
+   "id": "stall_r",
+   "name": "노점",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "small market stall with wooden frame and red cloth awning, goods and baskets on the table",
+   "fit": [
+    192,
+    180
+   ]
+  },
+  {
+   "id": "tomb",
+   "name": "고분",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "ancient round earthen burial mound covered with grass with a small stone marker",
+   "fit": [
+    192,
+    132
+   ]
+  },
+  {
+   "id": "boulder",
+   "name": "바위",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "large mossy granite boulder",
+   "fit": [
+    192,
+    156
+   ]
   }
  ]
 }

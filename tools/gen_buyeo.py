@@ -21,11 +21,31 @@ img = pipe(prompt=it["prompt"] + ", " + cfg["_style"][kind], negative_prompt=cfg
            generator=torch.Generator().manual_seed(seed)).images[0]
 os.makedirs("buyeo/out", exist_ok=True); os.makedirs("buyeo/game", exist_ok=True)
 img.convert("RGB").save(f"buyeo/out/{item_id}_s{seed}_raw.jpg", quality=85)
+if kind in ("t", "m"):   # 큰 그림: 배경 그대로, 크기만
+    tw = 1280 if kind == "t" else 768
+    im = img.convert("RGB").resize((tw, round(img.height * tw / img.width)), Image.LANCZOS)
+    im.save(f"buyeo/game/{item_id}_s{seed}.png"); im.save(f"buyeo/out/{item_id}_s{seed}.png")
+    print(f"완료 {time.time()-t0:.0f}초"); sys.exit(0)
 from rembg import remove, new_session
 cut = remove(img, session=new_session("isnet-general-use"))
 bb = cut.getchannel("A").getbbox()
 if bb: cut = cut.crop(bb)
 cut.save(f"buyeo/out/{item_id}_s{seed}.png")
+
+if "fit" in it:   # 지도 물체: 예전 그림 크기(2배) 칸에 아래 가운데 맞춤
+    FW, FH = it["fit"]
+    c = cut.copy(); c.thumbnail((FW - 4, FH - 2), Image.LANCZOS)
+    a = np.asarray(c).copy(); mask = a[..., 3] >= 128
+    rgb = Image.fromarray(a[..., :3]).quantize(colors=40, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE).convert("RGB")
+    a[..., :3] = np.asarray(rgb); a[..., 3] = np.where(mask, 255, 0)
+    canvas = np.zeros((FH, FW, 4), np.uint8)
+    oy, ox = FH - a.shape[0], (FW - a.shape[1]) // 2
+    canvas[oy:, ox:ox + a.shape[1]] = a
+    m = canvas[..., 3] > 0; ring = np.zeros_like(m)
+    for dy, dx in ((1, 0), (-1, 0), (0, 1), (0, -1)): ring |= np.roll(np.roll(m, dy, 0), dx, 1)
+    ring &= ~m; canvas[ring] = (34, 22, 14, 255)
+    Image.fromarray(canvas, "RGBA").save(f"buyeo/game/{item_id}_s{seed}.png")
+    print(f"완료 {time.time()-t0:.0f}초"); sys.exit(0)
 
 # ── 도트풍 가공: 112px 안에 맞춤 → 색 24개 → 알파 딱 자르기 → 1px 짙은 외곽선 → 128px 칸 가운데
 S, INNER, NCOL = (192, 184, 32) if kind == "p" else (128, 112, 24)   # 초상은 크게·색 많이
