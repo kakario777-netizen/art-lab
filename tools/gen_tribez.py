@@ -23,16 +23,6 @@ img = pipe(prompt=it["prompt"] + ", " + style, negative_prompt=neg,
            generator=torch.Generator().manual_seed(seed), callback_on_step_end=cb).images[0]
 os.makedirs("tribez/out", exist_ok=True)
 img.convert("RGB").save(f"tribez/out/{item_id}_s{seed}_raw.jpg", quality=85)
-from rembg import remove, new_session
-cut = remove(img, session=new_session("isnet-general-use"))
-bb = cut.getchannel("A").getbbox()
-if bb:
-    cut = cut.crop(bb)
-cut.save(f"tribez/out/{item_id}_s{seed}.png")
-# 게임 크기 (가로 최대 512, 인물은 높이 256)
-g = cut.copy()
-lim = (512, 512) if kind == "b" else ((256, 256) if kind == "c" else (256, 256))
-g.thumbnail(lim)
-os.makedirs("tribez/game", exist_ok=True)
-g.save(f"tribez/game/{item_id}_s{seed}.png")
+sys.path.insert(0, "tools"); from cut_tribez import cut, save
+save(cut(img), item_id, seed, kind)
 print(f"완료 {time.time()-t0:.0f}초")

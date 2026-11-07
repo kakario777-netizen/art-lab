@@ -1,0 +1,15 @@
+name: 트라이브 빌리지 배경 다시 오리기 (반투명 정리)
+on: {workflow_dispatch: {}}
+permissions: {contents: write}
+concurrency: {group: tribez-recut, cancel-in-progress: false}
+jobs:
+  recut:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install --quiet "rembg[cpu]" scipy pillow numpy
+      - run: python tools/cut_tribez.py && python tools/sheet_tribez.py
+      - run: |
+          git config user.name "art-bot"; git config user.email "art-bot@users.noreply.github.com"
+          git add tribez && git commit -qm "트라이브 그림 배경 다시 오리기" || exit 0
+          for i in $(seq 1 10); do git pull --rebase -q && git push -q && break; sleep 7; done

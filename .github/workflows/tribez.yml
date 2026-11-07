@@ -79,7 +79,7 @@ jobs:
       - name: 설치
         run: |
           pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
-          pip install --quiet diffusers transformers accelerate safetensors pillow "rembg[cpu]"
+          pip install --quiet diffusers transformers accelerate safetensors pillow "rembg[cpu]" scipy
       - name: 생성 ${{ matrix.id }} / ${{ matrix.seed }}
         env: {STEPS: "${{ inputs.steps }}", MODEL: "${{ inputs.model }}", HF_HOME: /home/runner/hfcache, HF_HUB_OFFLINE: "1"}
         run: python tools/gen_tribez.py ${{ matrix.id }} ${{ matrix.seed }}
