@@ -1677,6 +1677,142 @@
    "prompt": "swirling blue magic portal light circle",
    "w": 768,
    "h": 768
+  },
+  {
+   "id": "pine3",
+   "name": "소나무3",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "old twisted korean red pine tree with leaning reddish trunk and flat layered needle canopy",
+   "fit": [
+    108,
+    200
+   ]
+  },
+  {
+   "id": "pine4",
+   "name": "소나무4",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "young straight korean pine tree, slim reddish trunk, dense dark green conical needle clusters",
+   "fit": [
+    96,
+    200
+   ]
+  },
+  {
+   "id": "oak2",
+   "name": "참나무2",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "broad leafy deciduous tree with lush rounded green canopy and gnarled thick trunk",
+   "fit": [
+    120,
+    196
+   ]
+  },
+  {
+   "id": "zelkova",
+   "name": "느티나무",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "large korean zelkova tree with wide spreading umbrella canopy of small green leaves and sturdy trunk",
+   "fit": [
+    140,
+    200
+   ]
+  },
+  {
+   "id": "willow",
+   "name": "버드나무",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "weeping willow tree with long drooping light green branches by the water",
+   "fit": [
+    120,
+    200
+   ]
+  },
+  {
+   "id": "persimmon",
+   "name": "감나무",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "korean persimmon tree with dark green leaves and orange persimmon fruits",
+   "fit": [
+    112,
+    196
+   ]
+  },
+  {
+   "id": "maple",
+   "name": "단풍나무",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "korean maple tree with red and orange autumn leaves canopy",
+   "fit": [
+    112,
+    196
+   ]
+  },
+  {
+   "id": "birch",
+   "name": "자작나무",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "slender white birch tree with white bark trunk and light green small leaves",
+   "fit": [
+    96,
+    200
+   ]
+  },
+  {
+   "id": "bamboo",
+   "name": "대나무숲",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "small clump of tall green bamboo stalks with leaves",
+   "fit": [
+    96,
+    200
+   ]
+  },
+  {
+   "id": "bush2",
+   "name": "덤불2",
+   "kind": "o",
+   "w": 768,
+   "h": 768,
+   "prompt": "low dense round green shrub with small leaves",
+   "fit": [
+    72,
+    60
+   ]
+  },
+  {
+   "id": "tx_hill",
+   "name": "tx_hill",
+   "kind": "x",
+   "prompt": "grassy earthen hillside slope, brown soil showing through short green grass, scattered small rocks and roots",
+   "w": 768,
+   "h": 768
+  },
+  {
+   "id": "tx_hill2",
+   "name": "tx_hill2",
+   "kind": "x",
+   "prompt": "mossy natural rock outcrop and earth embankment with grass tufts, organic irregular stones",
+   "w": 768,
+   "h": 768
   }
  ]
 }
