@@ -1,0 +1,14 @@
+name: 한양 숨바꼭질 인물 배경 지우기
+on: {workflow_dispatch: {}}
+permissions: {contents: write}
+jobs:
+  cut:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install --quiet "rembg[cpu]" pillow
+      - run: python tools/cut_hyde.py
+      - run: |
+          git config user.name "art-bot"; git config user.email "art-bot@users.noreply.github.com"
+          git add hyde/cut && git commit -m "한양 숨바꼭질 인물 배경 지우기"
+          for i in 1 2 3 4 5; do git pull --rebase origin main && git push && break; sleep $((RANDOM % 20 + 5)); done
