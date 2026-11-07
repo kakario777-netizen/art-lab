@@ -20,4 +20,4 @@ jobs:
           mkdir -p out && cp dl/*.png out/
           pip install --quiet pillow && python tools/sheet.py
           git config user.name "art-bot"; git config user.email "art-bot@users.noreply.github.com"
-          git add out sheet.jpg && git commit -m "그림 생성 결과 모음" && git pull --rebase origin main && git push
+          git add out sheet.jpg && git commit -m "그림 생성 결과 모음" && for i in 1 2 3 4 5; do git pull --rebase origin main && git push && break; sleep $((RANDOM % 20 + 5)); done
