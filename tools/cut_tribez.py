@@ -27,10 +27,19 @@ def cut(img):
     if n:
         sz = ndimage.sum(obj, lab, range(1, n + 1))
         obj = np.isin(lab, [k + 1 for k, v in enumerate(sz) if v >= sz.max() * 0.03])
-    obj = ndimage.binary_fill_holes(ndimage.binary_closing(obj, iterations=2))
-    # 안쪽은 255, 바깥 2px 만 부드럽게
+    near_any = np.abs(rgb - ref).sum(-1) < 45            # 테두리와 안 이어진 배경색(팔과 무기 사이, 탁자 밑)
+    filled = ndimage.binary_fill_holes(ndimage.binary_closing(obj, iterations=2))
+    gap = near_any & (m < 0.45)
+    gl, gn = ndimage.label(gap)                           # 바위 밝은 면 같은 작은 조각은 배경 아님
+    if gn:
+        area = ndimage.sum(gap, gl, range(1, gn + 1)); mm = ndimage.mean(m, gl, range(1, gn + 1))
+        tot = max(obj.sum(), 1)
+        gap = np.isin(gl, [k + 1 for k in range(gn) if area[k] >= tot * 0.004 and mm[k] < 0.25])
+    obj = (obj | (filled & ~gap)) & ~gap
+    obj = ndimage.binary_opening(obj, iterations=1)
+    # 안쪽은 255, 가장자리 1px 깎고 2px 부드럽게(배경색 테두리 줄이기)
     d = ndimage.distance_transform_edt(obj)
-    a = np.clip(d / 2.0, 0, 1)
+    a = np.clip((d - 1.0) / 2.0, 0, 1)
     out = img.convert("RGBA"); out.putalpha(Image.fromarray((a * 255).astype(np.uint8)))
     bb = out.getchannel("A").getbbox()
     return out.crop(bb) if bb else out
