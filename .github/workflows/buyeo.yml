@@ -11,7 +11,7 @@ on:
 permissions:
   contents: write
 
-concurrency: {group: buyeo-art, cancel-in-progress: false}
+concurrency: {group: "buyeo-art-${{ github.run_id }}", cancel-in-progress: false}
 
 jobs:
   plan:
