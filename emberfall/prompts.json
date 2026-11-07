@@ -772,6 +772,54 @@
    "w": 1024,
    "h": 1024,
    "prompt": "a war horn blowing with golden runes rising"
+  },
+  {
+   "id": "o_cave_mouth",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "dark cave entrance carved into a rocky hillside, jagged rock arch around a black opening, moss and roots, seen from isometric three-quarter view"
+  },
+  {
+   "id": "o_cliff",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "section of weathered rocky cliff wall with layered stone and dry grass on top, isometric three-quarter view, solid barrier"
+  },
+  {
+   "id": "o_rockwall",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "low ruined field wall of stacked rough stones and broken masonry, overgrown with weeds, isometric three-quarter view"
+  },
+  {
+   "id": "o_rocks_big",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "cluster of large mossy boulders, isometric three-quarter view, impassable rock pile"
+  },
+  {
+   "id": "o_stairs_up",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "stone staircase going up built into a dungeon wall, worn steps rising into a dark arched opening in the brick wall, isometric three-quarter view"
+  },
+  {
+   "id": "o_stairs_down",
+   "cat": "오브젝트",
+   "kind": "o",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "stone staircase descending into darkness through a square opening in a dungeon floor, worn steps, iron-banded edge, isometric three-quarter view"
   }
  ]
 }
